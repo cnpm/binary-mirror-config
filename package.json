@@ -98,6 +98,10 @@
       "sqlite3": {
         "host": "https://npm.taobao.org/mirrors"
       },
+      "grpc": {
+        "host": "https://npm.taobao.org/mirrors",
+        "remote_path": "{name}/v{version}"
+      },
       "fsevents": {
         "host": "https://npm.taobao.org/mirrors/fsevents"
       },
