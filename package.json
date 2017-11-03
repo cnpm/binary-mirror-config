@@ -51,7 +51,8 @@
         "OPERADRIVER_CDNURL": "https://npm.taobao.org/mirrors/operadriver",
         "ELECTRON_MIRROR": "https://npm.taobao.org/mirrors/electron/",
         "SASS_BINARY_SITE": "https://npm.taobao.org/mirrors/node-sass",
-        "FLOW_BINARY_MIRROR": "https://github.com/facebook/flow/releases/download/v"
+        "FLOW_BINARY_MIRROR": "https://github.com/facebook/flow/releases/download/v",
+        "PUPPETEER_DOWNLOAD_HOST": "https://storage.googleapis.com.cnpmjs.org"
       },
       "utf-8-validate": {
         "host": "https://npm.taobao.org/mirrors/utf-8-validate/v{version}"
