@@ -52,6 +52,7 @@
         "ELECTRON_MIRROR": "https://npm.taobao.org/mirrors/electron/",
         "SASS_BINARY_SITE": "https://npm.taobao.org/mirrors/node-sass",
         "FLOW_BINARY_MIRROR": "https://github.com/facebook/flow/releases/download/v",
+        "NWJS_URLBASE": "https://npm.taobao.org/mirrors/nwjs/v",
         "PUPPETEER_DOWNLOAD_HOST": "https://cdn.npm.taobao.org/dist"
       },
       "utf-8-validate": {
