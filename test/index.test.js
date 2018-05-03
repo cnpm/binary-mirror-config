@@ -10,6 +10,6 @@ describe('test/index.test.js', () => {
     assert.equal(config.china.sqlite3.host, 'https://cdn.npm.taobao.org/dist');
     assert.equal(config.china.fsevents.host, 'https://cdn.npm.taobao.org/dist/fsevents');
     assert.equal(config.china['flow-bin'].host, 'https://cdn.npm.taobao.org/dist/flow/v');
-    assert.equal(config.china.ENVS.CHROMEDRIVER_CDNURL, 'https://tnpm-hz.oss-cn-hangzhou.aliyuncs.com/dist/chromedriver');
+    assert.equal(config.china.ENVS.CHROMEDRIVER_CDNURL, 'https://cdn.npm.taobao.org/dist/chromedriver');
   });
 });

@@ -27,8 +27,7 @@
     "web": "https://github.com/cnpm/binary-mirror-config"
   },
   "bugs": {
-    "url": "https://github.com/cnpm/binary-mirror-config/issues",
-    "email": "m@fengmk2.com"
+    "url": "https://github.com/cnpm/binary-mirror-config/issues"
   },
   "keywords": [
     "binary-mirror-config",
@@ -38,7 +37,7 @@
   "author": "fengmk2 <m@fengmk2.com> (http://fengmk2.com)",
   "license": "MIT",
   "ci": {
-    "version": "4, 6, 7"
+    "version": "4, 6, 8, 10"
   },
   "mirrors": {
     "china": {
@@ -47,7 +46,7 @@
         "NVM_NODEJS_ORG_MIRROR": "https://cdn.npm.taobao.org/dist/node",
         "NVM_IOJS_ORG_MIRROR": "https://cdn.npm.taobao.org/dist/iojs",
         "PHANTOMJS_CDNURL": "https://cdn.npm.taobao.org/dist/phantomjs",
-        "CHROMEDRIVER_CDNURL": "https://tnpm-hz.oss-cn-hangzhou.aliyuncs.com/dist/chromedriver",
+        "CHROMEDRIVER_CDNURL": "https://cdn.npm.taobao.org/dist/chromedriver",
         "OPERADRIVER_CDNURL": "https://cdn.npm.taobao.org/dist/operadriver",
         "ELECTRON_MIRROR": "https://cdn.npm.taobao.org/dist/electron/",
         "SASS_BINARY_SITE": "https://cdn.npm.taobao.org/dist/node-sass",
