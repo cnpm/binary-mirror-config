@@ -43,79 +43,79 @@
   "mirrors": {
     "china": {
       "ENVS": {
-        "NODEJS_ORG_MIRROR": "https://npm.taobao.org/mirrors/node",
-        "NVM_NODEJS_ORG_MIRROR": "https://npm.taobao.org/mirrors/node",
-        "NVM_IOJS_ORG_MIRROR": "https://npm.taobao.org/mirrors/iojs",
-        "PHANTOMJS_CDNURL": "https://npm.taobao.org/mirrors/phantomjs",
+        "NODEJS_ORG_MIRROR": "https://cdn.npm.taobao.org/dist/node",
+        "NVM_NODEJS_ORG_MIRROR": "https://cdn.npm.taobao.org/dist/node",
+        "NVM_IOJS_ORG_MIRROR": "https://cdn.npm.taobao.org/dist/iojs",
+        "PHANTOMJS_CDNURL": "https://cdn.npm.taobao.org/dist/phantomjs",
         "CHROMEDRIVER_CDNURL": "https://tnpm-hz.oss-cn-hangzhou.aliyuncs.com/dist/chromedriver",
-        "OPERADRIVER_CDNURL": "https://npm.taobao.org/mirrors/operadriver",
-        "ELECTRON_MIRROR": "https://npm.taobao.org/mirrors/electron/",
-        "SASS_BINARY_SITE": "https://npm.taobao.org/mirrors/node-sass",
+        "OPERADRIVER_CDNURL": "https://cdn.npm.taobao.org/dist/operadriver",
+        "ELECTRON_MIRROR": "https://cdn.npm.taobao.org/dist/electron/",
+        "SASS_BINARY_SITE": "https://cdn.npm.taobao.org/dist/node-sass",
         "FLOW_BINARY_MIRROR": "https://github.com/facebook/flow/releases/download/v",
-        "NWJS_URLBASE": "https://npm.taobao.org/mirrors/nwjs/v",
+        "NWJS_URLBASE": "https://cdn.npm.taobao.org/dist/nwjs/v",
         "PUPPETEER_DOWNLOAD_HOST": "https://cdn.npm.taobao.org/dist"
       },
       "utf-8-validate": {
-        "host": "https://npm.taobao.org/mirrors/utf-8-validate/v{version}"
+        "host": "https://cdn.npm.taobao.org/dist/utf-8-validate/v{version}"
       },
       "leveldown": {
-        "host": "https://npm.taobao.org/mirrors/leveldown/v{version}"
+        "host": "https://cdn.npm.taobao.org/dist/leveldown/v{version}"
       },
       "leveldown-hyper": {
-        "host": "https://npm.taobao.org/mirrors/leveldown-hyper/v{version}"
+        "host": "https://cdn.npm.taobao.org/dist/leveldown-hyper/v{version}"
       },
       "mknod": {
-        "host": "https://npm.taobao.org/mirrors/mknod/v{version}"
+        "host": "https://cdn.npm.taobao.org/dist/mknod/v{version}"
       },
       "couchbase": {
-        "host": "https://npm.taobao.org/mirrors/couchbase/v{version}"
+        "host": "https://cdn.npm.taobao.org/dist/couchbase/v{version}"
       },
       "sodium-prebuilt": {
-        "host": "https://npm.taobao.org/mirrors/sodium-prebuilt/v{version}"
+        "host": "https://cdn.npm.taobao.org/dist/sodium-prebuilt/v{version}"
       },
       "utp-native": {
-        "host": "https://npm.taobao.org/mirrors/utp-native/v{version}"
+        "host": "https://cdn.npm.taobao.org/dist/utp-native/v{version}"
       },
       "node-tk5": {
-        "host": "https://npm.taobao.org/mirrors/node-tk5/v{version}"
+        "host": "https://cdn.npm.taobao.org/dist/node-tk5/v{version}"
       },
       "fuse-bindings": {
-        "host": "https://npm.taobao.org/mirrors/fuse-bindings/v{version}"
+        "host": "https://cdn.npm.taobao.org/dist/fuse-bindings/v{version}"
       },
       "zmq-prebuilt": {
-        "host": "https://npm.taobao.org/mirrors/zmq-prebuilt/v{version}"
+        "host": "https://cdn.npm.taobao.org/dist/zmq-prebuilt/v{version}"
       },
       "gl": {
-        "host": "https://npm.taobao.org/mirrors/gl/v{version}"
+        "host": "https://cdn.npm.taobao.org/dist/gl/v{version}"
       },
       "hackrf": {
-        "host": "https://npm.taobao.org/mirrors/hackrf/v{version}"
+        "host": "https://cdn.npm.taobao.org/dist/hackrf/v{version}"
       },
       "rabin": {
-        "host": "https://npm.taobao.org/mirrors/rabin/v{version}"
+        "host": "https://cdn.npm.taobao.org/dist/rabin/v{version}"
       },
       "v8-debug": {
-        "host": "https://npm.taobao.org/mirrors/node-inspector"
+        "host": "https://cdn.npm.taobao.org/dist/node-inspector"
       },
       "v8-profiler": {
-        "host": "https://npm.taobao.org/mirrors/node-inspector"
+        "host": "https://cdn.npm.taobao.org/dist/node-inspector"
       },
       "sqlite3": {
-        "host": "https://npm.taobao.org/mirrors"
+        "host": "https://cdn.npm.taobao.org/dist"
       },
       "grpc": {
-        "host": "https://npm.taobao.org/mirrors",
+        "host": "https://cdn.npm.taobao.org/dist",
         "remote_path": "{name}/v{version}"
       },
       "fsevents": {
-        "host": "https://npm.taobao.org/mirrors/fsevents"
+        "host": "https://cdn.npm.taobao.org/dist/fsevents"
       },
       "nodegit": {
-        "host": "https://npm.taobao.org/mirrors/nodegit/v{version}"
+        "host": "https://cdn.npm.taobao.org/dist/nodegit/v{version}"
       },
       "flow-bin": {
         "replaceHost": "https://github.com/facebook/flow/releases/download/v",
-        "host": "https://npm.taobao.org/mirrors/flow/v"
+        "host": "https://cdn.npm.taobao.org/dist/flow/v"
       },
       "jpegtran-bin": {
         "replaceHost": [

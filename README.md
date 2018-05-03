@@ -22,7 +22,8 @@ Binary mirror config for [prebuild](https://github.com/mafintosh/prebuild) and [
 
 ## Mirrors
 
-- China: https://npm.taobao.org/mirrors
+- China: https://npm.taobao.org/mirrors/
+  - CDN prefix: https://cdn.npm.taobao.org/dist/
 
 ## License
 
