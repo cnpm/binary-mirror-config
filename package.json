@@ -121,10 +121,10 @@
       },
       "jpegtran-bin": {
         "replaceHost": [
-          "https://raw.githubusercontent.com",
-          "https://raw.github.com"
+          "https://raw.githubusercontent.com/imagemin/jpegtran-bin",
+          "https://raw.github.com/imagemin/jpegtran-bin"
         ],
-        "host": "https://raw.github.cnpmjs.org"
+        "host": "https://cnpmjs.org/mirrors/jpegtran-bin"
       },
       "cwebp-bin": {
         "replaceHost": [
