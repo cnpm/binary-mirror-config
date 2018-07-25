@@ -128,38 +128,38 @@
       },
       "cwebp-bin": {
         "replaceHost": [
-          "https://raw.githubusercontent.com",
-          "https://raw.github.com"
+          "https://raw.githubusercontent.com/imagemin/cwebp-bin",
+          "https://raw.github.com/imagemin/cwebp-bin"
         ],
-        "host": "https://raw.github.cnpmjs.org"
+        "host": "https://cnpmjs.org/mirrors/cwebp-bin"
       },
       "zopflipng-bin": {
         "replaceHost": [
-          "https://raw.githubusercontent.com",
-          "https://raw.github.com"
+          "https://raw.githubusercontent.com/imagemin/zopflipng-bin",
+          "https://raw.github.com/imagemin/zopflipng-bin"
         ],
-        "host": "https://raw.github.cnpmjs.org"
+        "host": "https://cnpmjs.org/mirrors/zopflipng-bin"
       },
       "optipng-bin": {
         "replaceHost": [
-          "https://raw.githubusercontent.com",
-          "https://raw.github.com"
+          "https://raw.githubusercontent.com/imagemin/optipng-bin",
+          "https://raw.github.com/imagemin/optipng-bin"
         ],
-        "host": "https://raw.github.cnpmjs.org"
+        "host": "https://cnpmjs.org/mirrors/optipng-bin"
       },
       "mozjpeg": {
         "replaceHost": [
-          "https://raw.githubusercontent.com",
-          "https://raw.github.com"
+          "https://raw.githubusercontent.com/imagemin/mozjpeg-bin",
+          "https://raw.github.com/imagemin/mozjpeg-bin"
         ],
-        "host": "https://raw.github.cnpmjs.org"
+        "host": "https://cnpmjs.org/mirrors/mozjpeg-bin"
       },
       "gifsicle": {
         "replaceHost": [
-          "https://raw.githubusercontent.com",
-          "https://raw.github.com"
+          "https://raw.githubusercontent.com/imagemin/gifsicle-bin",
+          "https://raw.github.com/imagemin/gifsicle-bin"
         ],
-        "host": "https://raw.github.cnpmjs.org"
+        "host": "https://cnpmjs.org/mirrors/gifsicle-bin"
       },
       "pngquant-bin": {
         "replaceHost": [
@@ -174,38 +174,38 @@
       },
       "pngcrush-bin": {
         "replaceHost": [
-          "https://raw.githubusercontent.com",
-          "https://raw.github.com"
+          "https://raw.githubusercontent.com/imagemin/pngcrush-bin",
+          "https://raw.github.com/imagemin/pngcrush-bin"
         ],
-        "host": "https://raw.github.cnpmjs.org"
+        "host": "https://cnpmjs.org/mirrors/pngcrush-bin"
       },
       "jpeg-recompress-bin": {
         "replaceHost": [
-          "https://raw.githubusercontent.com",
-          "https://raw.github.com"
+          "https://raw.githubusercontent.com/imagemin/jpeg-recompress-bin",
+          "https://raw.github.com/imagemin/jpeg-recompress-bin"
         ],
-        "host": "https://raw.github.cnpmjs.org"
+        "host": "https://cnpmjs.org/mirrors/jpeg-recompress-bin"
       },
       "advpng-bin": {
         "replaceHost": [
-          "https://raw.githubusercontent.com",
-          "https://raw.github.com"
+          "https://raw.githubusercontent.com/imagemin/advpng-bin",
+          "https://raw.github.com/imagemin/advpng-bin"
         ],
-        "host": "https://raw.github.cnpmjs.org"
+        "host": "https://cnpmjs.org/mirrors/advpng-bin"
       },
       "pngout-bin": {
         "replaceHost": [
-          "https://raw.githubusercontent.com",
-          "https://raw.github.com"
+          "https://raw.githubusercontent.com/imagemin/pngout-bin",
+          "https://raw.github.com/imagemin/pngout-bin"
         ],
-        "host": "https://raw.github.cnpmjs.org"
+        "host": "https://cnpmjs.org/mirrors/pngout-bin"
       },
       "jpegoptim-bin": {
         "replaceHost": [
-          "https://raw.githubusercontent.com",
-          "https://raw.github.com"
+          "https://raw.githubusercontent.com/imagemin/jpegoptim-bin",
+          "https://raw.github.com/imagemin/jpegoptim-bin"
         ],
-        "host": "https://raw.github.cnpmjs.org"
+        "host": "https://cnpmjs.org/mirrors/jpegoptim-bin"
       }
     }
   }
