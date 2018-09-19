@@ -209,6 +209,11 @@
           "https://raw.github.com/imagemin/jpegoptim-bin"
         ],
         "host": "https://npm.taobao.org/mirrors/jpegoptim-bin"
+      },
+      "vscode": {
+        "replaceHostRegExpMap": {
+          "https://raw\\.githubusercontent\\.com/": "https://raw.github.cnpmjs.org/"
+        }
       }
     }
   }
