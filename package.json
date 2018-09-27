@@ -52,7 +52,8 @@
         "SASS_BINARY_SITE": "https://cdn.npm.taobao.org/dist/node-sass",
         "FLOW_BINARY_MIRROR": "https://github.com/facebook/flow/releases/download/v",
         "NWJS_URLBASE": "https://cdn.npm.taobao.org/dist/nwjs/v",
-        "PUPPETEER_DOWNLOAD_HOST": "https://cdn.npm.taobao.org/dist"
+        "PUPPETEER_DOWNLOAD_HOST": "https://cdn.npm.taobao.org/dist",
+        "SENTRYCLI_CDNURL": "https://npm.taobao.org/mirrors/sentry-cli"
       },
       "cypress": {
         "host": "https://cdn.npm.taobao.org/dist/cypress"
