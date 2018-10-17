@@ -120,7 +120,7 @@
         "host": "https://cdn.npm.taobao.org/dist/nodegit/v{version}"
       },
       "canvas-prebuilt": {
-        "host": "https://cdn.npm.taobao.org/dist/canvas-prebuilt/v{version}"
+        "host": "https://cdn.npm.taobao.org/dist/canvas-prebuilt"
       },
       "flow-bin": {
         "replaceHost": "https://github.com/facebook/flow/releases/download/v",
