@@ -119,6 +119,9 @@
       "nodegit": {
         "host": "https://cdn.npm.taobao.org/dist/nodegit/v{version}"
       },
+      "canvas-prebuilt": {
+        "host": "https://cdn.npm.taobao.org/dist/canvas-prebuilt/v{version}"
+      },
       "flow-bin": {
         "replaceHost": "https://github.com/facebook/flow/releases/download/v",
         "host": "https://cdn.npm.taobao.org/dist/flow/v"
