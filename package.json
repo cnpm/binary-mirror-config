@@ -53,7 +53,16 @@
         "FLOW_BINARY_MIRROR": "https://github.com/facebook/flow/releases/download/v",
         "NWJS_URLBASE": "https://cdn.npm.taobao.org/dist/nwjs/v",
         "PUPPETEER_DOWNLOAD_HOST": "https://cdn.npm.taobao.org/dist",
-        "SENTRYCLI_CDNURL": "https://npm.taobao.org/mirrors/sentry-cli"
+        "SENTRYCLI_CDNURL": "https://cdn.npm.taobao.org/dist/sentry-cli",
+        "npm_config_sharp_binary_host": "https://cdn.npm.taobao.org/dist/sharp"
+      },
+      "sharp": {
+        "replaceHostFiles": [
+          "install/libvips.js"
+        ],
+        "replaceHostMap": {
+          "https://github.com/lovell/sharp-libvips/releases/download/": "https://cdn.npm.taobao.org/dist/sharp-libvips/"
+        }
       },
       "cypress": {
         "host": "https://cdn.npm.taobao.org/dist/cypress"
