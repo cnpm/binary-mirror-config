@@ -50,6 +50,7 @@
         "OPERADRIVER_CDNURL": "https://cdn.npm.taobao.org/dist/operadriver",
         "ELECTRON_MIRROR": "https://cdn.npm.taobao.org/dist/electron/",
         "SASS_BINARY_SITE": "https://cdn.npm.taobao.org/dist/node-sass",
+        "SWC_BINARY_SITE": "https://cdn.npm.taobao.org/dist/node-swc",
         "FLOW_BINARY_MIRROR": "https://github.com/facebook/flow/releases/download/v",
         "NWJS_URLBASE": "https://cdn.npm.taobao.org/dist/nwjs/v",
         "PUPPETEER_DOWNLOAD_HOST": "https://cdn.npm.taobao.org/dist",
