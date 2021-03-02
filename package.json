@@ -169,9 +169,6 @@
       "canvas-prebuilt": {
         "host": "https://cdn.npm.taobao.org/dist/canvas-prebuilt"
       },
-      "canvas": {
-        "host": "https://cdn.npm.taobao.org/dist/node-canvas-prebuilt"
-      },
       "flow-bin": {
         "replaceHost": "https://github.com/facebook/flow/releases/download/v",
         "host": "https://cdn.npm.taobao.org/dist/flow/v"
