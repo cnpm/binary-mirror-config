@@ -36,8 +36,10 @@
   "license": "MIT",
   "ci": {
     "type": "github",
-    "version": "8, 10, 12, 14",
-    "github": "linux"
+    "version": "10, 12, 14",
+    "os": {
+      "github": "linux"
+    }
   },
   "mirrors": {
     "china": {
