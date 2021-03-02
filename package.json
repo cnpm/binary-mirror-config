@@ -7,24 +7,22 @@
     "index.js"
   ],
   "scripts": {
-    "test": "npm run lint && mocha -t 5000 test/*.test.js",
-    "test-cov": "istanbul cover _mocha -- -t 5000 test/*.test.js",
-    "lint": "eslint index.js",
+    "test": "npm run lint && egg-bin test",
+    "test-cov": "egg-bin cov",
+    "lint": "eslint test index.js",
     "ci": "npm run lint && npm run test-cov"
   },
   "dependencies": {},
   "devDependencies": {
+    "egg-bin": "^4.15.0",
     "egg-ci": "1",
-    "eslint": "3",
-    "eslint-config-egg": "3",
-    "istanbul": "*",
-    "mocha": "*"
+    "eslint": "7",
+    "eslint-config-egg": "9"
   },
   "homepage": "https://github.com/cnpm/binary-mirror-config",
   "repository": {
     "type": "git",
-    "url": "git://github.com/cnpm/binary-mirror-config.git",
-    "web": "https://github.com/cnpm/binary-mirror-config"
+    "url": "git://github.com/cnpm/binary-mirror-config.git"
   },
   "bugs": {
     "url": "https://github.com/cnpm/binary-mirror-config/issues"
@@ -34,10 +32,12 @@
     "prebuild",
     "node-pre-gyp"
   ],
-  "author": "fengmk2 <m@fengmk2.com> (http://fengmk2.com)",
+  "author": "fengmk2 <fengmk2@gmail.com> (https://fengmk2.com)",
   "license": "MIT",
   "ci": {
-    "version": "4, 6, 8, 10, 12, 14"
+    "type": "github",
+    "version": "8, 10, 12, 14",
+    "github": "linux"
   },
   "mirrors": {
     "china": {
