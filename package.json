@@ -168,6 +168,9 @@
       "nodegit": {
         "host": "https://cdn.npm.taobao.org/dist/nodegit/v{version}"
       },
+      "nodejieba": {
+        "host": "https://cdn.npm.taobao.org/dist/nodejieba"
+      },
       "canvas-prebuilt": {
         "host": "https://cdn.npm.taobao.org/dist/canvas-prebuilt"
       },
