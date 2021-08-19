@@ -273,6 +273,9 @@
         "replaceHostRegExpMap": {
           "https://raw\\.githubusercontent\\.com/": "https://raw.github.cnpmjs.org/"
         }
+      },
+      "argon2": {
+        "host": "https://npm.taobao.org/mirrors/argon2"
       }
     }
   }
