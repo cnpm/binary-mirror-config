@@ -276,6 +276,9 @@
       },
       "argon2": {
         "host": "https://npm.taobao.org/mirrors/argon2"
+      },
+      "ali-zeromq": {
+        "host": "https://npm.taobao.org/mirrors/ali-zeromq"
       }
     }
   }
