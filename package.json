@@ -60,6 +60,7 @@
         "NWJS_URLBASE": "https://oss.npmmirror.com/dist/nwjs/v",
         "PUPPETEER_DOWNLOAD_HOST": "https://oss.npmmirror.com/dist",
         "SENTRYCLI_CDNURL": "https://oss.npmmirror.com/dist/sentry-cli",
+        "SAUCECTL_INSTALL_BINARY_MIRROR": "https://npmmirror.com/mirrors/saucectl",
         "npm_config_sharp_binary_host": "https://oss.npmmirror.com/dist/sharp",
         "npm_config_sharp_libvips_binary_host": "https://npmmirror.com/mirrors/sharp-libvips",
         "npm_config_robotjs_binary_host": "https://oss.npmmirror.com/dist/robotjs"
