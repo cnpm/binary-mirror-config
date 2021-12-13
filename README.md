@@ -23,14 +23,7 @@ Binary mirror config for [prebuild](https://github.com/mafintosh/prebuild) and [
 ## License
 
 [MIT](LICENSE)
-<!-- GITCONTRIBUTOR_START -->
 
 ## Contributors
 
-|[<img src="https://avatars.githubusercontent.com/u/156269?v=4" width="100px;"/><br/><sub><b>fengmk2</b></sub>](https://github.com/fengmk2)<br/>|[<img src="https://avatars.githubusercontent.com/u/6897780?v=4" width="100px;"/><br/><sub><b>killagu</b></sub>](https://github.com/killagu)<br/>|[<img src="https://avatars.githubusercontent.com/u/36290410?v=4" width="100px;"/><br/><sub><b>WEN-JY</b></sub>](https://github.com/WEN-JY)<br/>|[<img src="https://avatars.githubusercontent.com/u/4136679?v=4" width="100px;"/><br/><sub><b>yibn2008</b></sub>](https://github.com/yibn2008)<br/>|[<img src="https://avatars.githubusercontent.com/u/985607?v=4" width="100px;"/><br/><sub><b>dead-horse</b></sub>](https://github.com/dead-horse)<br/>|[<img src="https://avatars.githubusercontent.com/u/1119126?v=4" width="100px;"/><br/><sub><b>looksgood</b></sub>](https://github.com/looksgood)<br/>|
-| :---: | :---: | :---: | :---: | :---: | :---: |
-[<img src="https://avatars.githubusercontent.com/u/2784308?v=4" width="100px;"/><br/><sub><b>yisibl</b></sub>](https://github.com/yisibl)<br/>
-
-This project follows the git-contributor [spec](https://github.com/xudafeng/git-contributor), auto updated at `Sun Nov 07 2021 00:52:44 GMT+0800`.
-
-<!-- GITCONTRIBUTOR_END -->
+[![](https://ergatejs.implements.io/badges/contributors/cnpm/binary-mirror-config.svg?width=1250&size=96&padding=6)](https://github.com/cnpm/binary-mirror-config/graphs/contributors)
