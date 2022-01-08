@@ -157,7 +157,7 @@
         "host": "https://oss.npmmirror.com/dist"
       },
       "@journeyapps/sqlcipher": {
-        "host": "https://oss.npmmirror.com/dist"
+        "host": "https://npmmirror.com/mirrors"
       },
       "grpc": {
         "host": "https://oss.npmmirror.com/dist",
