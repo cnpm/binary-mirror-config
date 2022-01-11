@@ -280,6 +280,9 @@
       },
       "ali-zeromq": {
         "host": "https://npmmirror.com/mirrors/ali-zeromq"
+      },
+      "gdal-async": {
+        "host": "https://npmmirror.com/mirrors/node-gdal-async"
       }
     }
   }
