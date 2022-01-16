@@ -54,7 +54,6 @@
         "ELECTRON_BUILDER_BINARIES_MIRROR": "https://npmmirror.com/mirrors/electron-builder-binaries/",
         "SASS_BINARY_SITE": "https://oss.npmmirror.com/dist/node-sass",
         "SWC_BINARY_SITE": "https://oss.npmmirror.com/dist/node-swc",
-        "FLOW_BINARY_MIRROR": "https://github.com/facebook/flow/releases/download/v",
         "NWJS_URLBASE": "https://oss.npmmirror.com/dist/nwjs/v",
         "PUPPETEER_DOWNLOAD_HOST": "https://oss.npmmirror.com/dist",
         "SENTRYCLI_CDNURL": "https://oss.npmmirror.com/dist/sentry-cli",
@@ -269,11 +268,6 @@
           "https://raw.github.com/imagemin/jpegoptim-bin"
         ],
         "host": "https://npmmirror.com/mirrors/jpegoptim-bin"
-      },
-      "vscode": {
-        "replaceHostRegExpMap": {
-          "https://raw\\.githubusercontent\\.com/": "https://raw.github.cnpmjs.org/"
-        }
       },
       "argon2": {
         "host": "https://npmmirror.com/mirrors/argon2"
