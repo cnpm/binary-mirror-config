@@ -44,33 +44,32 @@
   "mirrors": {
     "china": {
       "ENVS": {
-        "NODEJS_ORG_MIRROR": "https://oss.npmmirror.com/dist/node",
-        "NVM_NODEJS_ORG_MIRROR": "https://oss.npmmirror.com/dist/node",
-        "NVM_IOJS_ORG_MIRROR": "https://oss.npmmirror.com/dist/iojs",
+        "NODEJS_ORG_MIRROR": "https://cdn.npmmirror.com/binaries/node",
+        "NVM_NODEJS_ORG_MIRROR": "https://cdn.npmmirror.com/binaries/node",
         "PHANTOMJS_CDNURL": "https://oss.npmmirror.com/dist/phantomjs",
-        "CHROMEDRIVER_CDNURL": "https://oss.npmmirror.com/dist/chromedriver",
-        "OPERADRIVER_CDNURL": "https://oss.npmmirror.com/dist/operadriver",
-        "ELECTRON_MIRROR": "https://oss.npmmirror.com/dist/electron/",
-        "ELECTRON_BUILDER_BINARIES_MIRROR": "https://npmmirror.com/mirrors/electron-builder-binaries/",
-        "SASS_BINARY_SITE": "https://oss.npmmirror.com/dist/node-sass",
-        "SWC_BINARY_SITE": "https://oss.npmmirror.com/dist/node-swc",
-        "NWJS_URLBASE": "https://oss.npmmirror.com/dist/nwjs/v",
-        "PUPPETEER_DOWNLOAD_HOST": "https://oss.npmmirror.com/dist",
-        "SENTRYCLI_CDNURL": "https://oss.npmmirror.com/dist/sentry-cli",
-        "SAUCECTL_INSTALL_BINARY_MIRROR": "https://npmmirror.com/mirrors/saucectl",
-        "npm_config_sharp_binary_host": "https://oss.npmmirror.com/dist/sharp",
-        "npm_config_sharp_libvips_binary_host": "https://npmmirror.com/mirrors/sharp-libvips",
-        "npm_config_robotjs_binary_host": "https://oss.npmmirror.com/dist/robotjs"
+        "CHROMEDRIVER_CDNURL": "https://cdn.npmmirror.com/binaries/chromedriver",
+        "OPERADRIVER_CDNURL": "https://cdn.npmmirror.com/binaries/operadriver",
+        "ELECTRON_MIRROR": "https://cdn.npmmirror.com/binaries/electron/",
+        "ELECTRON_BUILDER_BINARIES_MIRROR": "https://cdn.npmmirror.com/binaries/electron-builder-binaries/",
+        "SASS_BINARY_SITE": "https://cdn.npmmirror.com/binaries/node-sass",
+        "SWC_BINARY_SITE": "https://cdn.npmmirror.com/binaries/node-swc",
+        "NWJS_URLBASE": "https://cdn.npmmirror.com/binaries/nwjs/v",
+        "PUPPETEER_DOWNLOAD_HOST": "https://cdn.npmmirror.com/binaries",
+        "SENTRYCLI_CDNURL": "https://cdn.npmmirror.com/binaries/sentry-cli",
+        "SAUCECTL_INSTALL_BINARY_MIRROR": "https://cdn.npmmirror.com/binaries/saucectl",
+        "npm_config_sharp_binary_host": "https://cdn.npmmirror.com/binaries/sharp",
+        "npm_config_sharp_libvips_binary_host": "https://cdn.npmmirror.com/binaries/sharp-libvips",
+        "npm_config_robotjs_binary_host": "https://cdn.npmmirror.com/binaries/robotjs"
       },
       "@ali/s2": {
-        "host": "https://oss.npmmirror.com/dist/looksgood-s2"
+        "host": "https://cdn.npmmirror.com/binaries/looksgood-s2"
       },
       "sharp": {
         "replaceHostFiles": [
           "install/libvips.js"
         ],
         "replaceHostMap": {
-          "https://github.com/lovell/sharp-libvips/releases/download/": "https://oss.npmmirror.com/dist/sharp-libvips/"
+          "https://github.com/lovell/sharp-libvips/releases/download/": "https://cdn.npmmirror.com/binaries/sharp-libvips/"
         }
       },
       "@tensorflow/tfjs-node": {
@@ -79,14 +78,14 @@
           "package.json"
         ],
         "replaceHostRegExpMap": {
-          "https://storage\\.googleapis\\.com/": "https://oss.npmmirror.com/dist/"
+          "https://storage\\.googleapis\\.com/": "https://cdn.npmmirror.com/binaries/"
         },
         "replaceHostMap": {
-          "https://storage.googleapis.com/": "https://oss.npmmirror.com/dist/"
+          "https://storage.googleapis.com/": "https://cdn.npmmirror.com/binaries/"
         }
       },
       "cypress": {
-        "host": "https://oss.npmmirror.com/dist/cypress",
+        "host": "https://cdn.npmmirror.com/binaries/cypress",
         "newPlatforms": {
           "mac": "darwin-x64",
           "win": "win32-ia32",
@@ -101,137 +100,95 @@
         }
       },
       "utf-8-validate": {
-        "host": "https://oss.npmmirror.com/dist/utf-8-validate/v{version}"
+        "host": "https://cdn.npmmirror.com/binaries/utf-8-validate/v{version}"
       },
       "xprofiler": {
         "remote_path": "./xprofiler/v{version}/",
-        "host": "https://oss.npmmirror.com/dist"
+        "host": "https://cdn.npmmirror.com/binaries"
       },
       "leveldown": {
-        "host": "https://oss.npmmirror.com/dist/leveldown/v{version}"
-      },
-      "leveldown-hyper": {
-        "host": "https://oss.npmmirror.com/dist/leveldown-hyper/v{version}"
-      },
-      "zeromq": {
-        "host": "https://oss.npmmirror.com/dist/zeromq/v{version}"
-      },
-      "mknod": {
-        "host": "https://oss.npmmirror.com/dist/mknod/v{version}"
+        "host": "https://cdn.npmmirror.com/binaries/leveldown/v{version}"
       },
       "couchbase": {
-        "host": "https://oss.npmmirror.com/dist/couchbase/v{version}"
-      },
-      "sodium-prebuilt": {
-        "host": "https://oss.npmmirror.com/dist/sodium-prebuilt/v{version}"
-      },
-      "utp-native": {
-        "host": "https://oss.npmmirror.com/dist/utp-native/v{version}"
-      },
-      "node-tk5": {
-        "host": "https://oss.npmmirror.com/dist/node-tk5/v{version}"
-      },
-      "fuse-bindings": {
-        "host": "https://oss.npmmirror.com/dist/fuse-bindings/v{version}"
-      },
-      "zmq-prebuilt": {
-        "host": "https://oss.npmmirror.com/dist/zmq-prebuilt/v{version}"
+        "host": "https://cdn.npmmirror.com/binaries/couchbase/v{version}"
       },
       "gl": {
-        "host": "https://oss.npmmirror.com/dist/gl/v{version}"
-      },
-      "hackrf": {
-        "host": "https://oss.npmmirror.com/dist/hackrf/v{version}"
-      },
-      "rabin": {
-        "host": "https://oss.npmmirror.com/dist/rabin/v{version}"
-      },
-      "v8-debug": {
-        "host": "https://oss.npmmirror.com/dist/node-inspector"
-      },
-      "v8-profiler": {
-        "host": "https://oss.npmmirror.com/dist/node-inspector"
+        "host": "https://cdn.npmmirror.com/binaries/gl/v{version}"
       },
       "sqlite3": {
-        "host": "https://oss.npmmirror.com/dist"
+        "host": "https://cdn.npmmirror.com/binaries"
       },
       "@journeyapps/sqlcipher": {
-        "host": "https://npmmirror.com/mirrors"
+        "host": "https://cdn.npmmirror.com/binaries"
       },
       "grpc": {
-        "host": "https://oss.npmmirror.com/dist",
+        "host": "https://cdn.npmmirror.com/binaries",
         "remote_path": "{name}/v{version}"
       },
       "fsevents": {
-        "host": "https://oss.npmmirror.com/dist/fsevents"
-      },
-      "nodegit": {
-        "host": "https://oss.npmmirror.com/dist/nodegit/v{version}"
+        "host": "https://cdn.npmmirror.com/binaries/fsevents"
       },
       "nodejieba": {
-        "host": "https://oss.npmmirror.com/dist/nodejieba"
-      },
-      "canvas-prebuilt": {
-        "host": "https://oss.npmmirror.com/dist/canvas-prebuilt"
+        "host": "https://cdn.npmmirror.com/binaries/nodejieba"
       },
       "canvas": {
-        "host": "https://oss.npmmirror.com/dist/node-canvas-prebuilt"
+        "host": "https://cdn.npmmirror.com/binaries/node-canvas-prebuilt"
       },
       "flow-bin": {
         "replaceHost": "https://github.com/facebook/flow/releases/download/v",
-        "host": "https://oss.npmmirror.com/dist/flow/v"
+        "host": "https://cdn.npmmirror.com/binaries/flow/v"
       },
       "jpegtran-bin": {
         "replaceHost": [
           "https://raw.githubusercontent.com/imagemin/jpegtran-bin",
           "https://raw.github.com/imagemin/jpegtran-bin"
         ],
-        "host": "https://npmmirror.com/mirrors/jpegtran-bin"
+        "host": "https://cdn.npmmirror.com/binaries/jpegtran-bin"
       },
       "cwebp-bin": {
         "replaceHost": [
           "https://raw.githubusercontent.com/imagemin/cwebp-bin",
           "https://raw.github.com/imagemin/cwebp-bin"
         ],
-        "host": "https://npmmirror.com/mirrors/cwebp-bin"
+        "host": "https://cdn.npmmirror.com/binaries/cwebp-bin"
       },
       "zopflipng-bin": {
         "replaceHost": [
           "https://raw.githubusercontent.com/imagemin/zopflipng-bin",
           "https://raw.github.com/imagemin/zopflipng-bin"
         ],
-        "host": "https://npmmirror.com/mirrors/zopflipng-bin"
+        "host": "https://cdn.npmmirror.com/binaries/zopflipng-bin"
       },
       "optipng-bin": {
         "replaceHost": [
           "https://raw.githubusercontent.com/imagemin/optipng-bin",
           "https://raw.github.com/imagemin/optipng-bin"
         ],
-        "host": "https://npmmirror.com/mirrors/optipng-bin"
+        "host": "https://cdn.npmmirror.com/binaries/optipng-bin"
       },
       "mozjpeg": {
         "replaceHost": [
           "https://raw.githubusercontent.com/imagemin/mozjpeg-bin",
           "https://raw.github.com/imagemin/mozjpeg-bin"
         ],
-        "host": "https://npmmirror.com/mirrors/mozjpeg-bin"
+        "host": "https://cdn.npmmirror.com/binaries/mozjpeg-bin"
       },
       "gifsicle": {
         "replaceHost": [
           "https://raw.githubusercontent.com/imagemin/gifsicle-bin",
           "https://raw.github.com/imagemin/gifsicle-bin"
         ],
-        "host": "https://npmmirror.com/mirrors/gifsicle-bin"
+        "host": "https://cdn.npmmirror.com/binaries/gifsicle-bin"
       },
       "pngquant-bin": {
         "replaceHost": [
           "https://raw.githubusercontent.com/imagemin/pngquant-bin",
           "https://raw.github.com/imagemin/pngquant-bin"
         ],
-        "host": "https://npmmirror.com/mirrors/pngquant-bin",
+        "host": "https://cdn.npmmirror.com/binaries/pngquant-bin",
         "replaceHostMap": {
-          "https://raw.githubusercontent.com/imagemin/pngquant-bin": "https://npmmirror.com/mirrors/pngquant-bin",
-          "https://raw.github.com/imagemin/pngquant-bin": "https://npmmirror.com/mirrors/pngquant-bin"
+          "https://raw.githubusercontent.com/imagemin/pngquant-bin": "https://cdn.npmmirror.com/binaries/pngquant-bin",
+          "https://raw.github.com/imagemin/pngquant-bin": "https://cdn.npmmirror.com/binaries/pngquant-bin"
         }
       },
       "pngcrush-bin": {
@@ -239,44 +196,41 @@
           "https://raw.githubusercontent.com/imagemin/pngcrush-bin",
           "https://raw.github.com/imagemin/pngcrush-bin"
         ],
-        "host": "https://npmmirror.com/mirrors/pngcrush-bin"
+        "host": "https://cdn.npmmirror.com/binaries/pngcrush-bin"
       },
       "jpeg-recompress-bin": {
         "replaceHost": [
           "https://raw.githubusercontent.com/imagemin/jpeg-recompress-bin",
           "https://raw.github.com/imagemin/jpeg-recompress-bin"
         ],
-        "host": "https://npmmirror.com/mirrors/jpeg-recompress-bin"
+        "host": "https://cdn.npmmirror.com/binaries/jpeg-recompress-bin"
       },
       "advpng-bin": {
         "replaceHost": [
           "https://raw.githubusercontent.com/imagemin/advpng-bin",
           "https://raw.github.com/imagemin/advpng-bin"
         ],
-        "host": "https://npmmirror.com/mirrors/advpng-bin"
+        "host": "https://cdn.npmmirror.com/binaries/advpng-bin"
       },
       "pngout-bin": {
         "replaceHost": [
           "https://raw.githubusercontent.com/imagemin/pngout-bin",
           "https://raw.github.com/imagemin/pngout-bin"
         ],
-        "host": "https://npmmirror.com/mirrors/pngout-bin"
+        "host": "https://cdn.npmmirror.com/binaries/pngout-bin"
       },
       "jpegoptim-bin": {
         "replaceHost": [
           "https://raw.githubusercontent.com/imagemin/jpegoptim-bin",
           "https://raw.github.com/imagemin/jpegoptim-bin"
         ],
-        "host": "https://npmmirror.com/mirrors/jpegoptim-bin"
+        "host": "https://cdn.npmmirror.com/binaries/jpegoptim-bin"
       },
       "argon2": {
-        "host": "https://npmmirror.com/mirrors/argon2"
-      },
-      "ali-zeromq": {
-        "host": "https://npmmirror.com/mirrors/ali-zeromq"
+        "host": "https://cdn.npmmirror.com/binaries/argon2"
       },
       "gdal-async": {
-        "host": "https://npmmirror.com/mirrors/node-gdal-async"
+        "host": "https://cdn.npmmirror.com/binaries/node-gdal-async"
       }
     }
   }
