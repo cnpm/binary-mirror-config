@@ -19,7 +19,7 @@ Binary mirror config for [prebuild](https://github.com/mafintosh/prebuild) and [
 ## Mirrors
 
 - China: https://npmmirror.com/mirrors/
-  - CDN prefix: https://oss.npmmirror.com/dist/
+  - CDN prefix: https://cdn.npmmirror.com/binaries/
 
 ## License
 
