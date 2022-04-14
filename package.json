@@ -120,7 +120,8 @@
         "host": "https://cdn.npmmirror.com/binaries/gl/v{version}"
       },
       "sqlite3": {
-        "host": "https://cdn.npmmirror.com/binaries"
+        "host": "https://cdn.npmmirror.com/binaries/sqlite3",
+        "remote_path": "v{version}"
       },
       "@journeyapps/sqlcipher": {
         "host": "https://cdn.npmmirror.com/binaries"
