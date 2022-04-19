@@ -237,6 +237,9 @@
       "ali-zeromq": {
         "host": "https://cdn.npmmirror.com/binaries/ali-zeromq"
       },
+      "ali-usb_ctl": {
+        "host": "https://cdn.npmmirror.com/binaries/ali-usb_ctl"
+      },
       "gdal-async": {
         "host": "https://cdn.npmmirror.com/binaries/node-gdal-async"
       }
