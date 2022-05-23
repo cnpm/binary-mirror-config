@@ -13,13 +13,20 @@
     "lint": "eslint test index.js",
     "ci": "npm run lint && npm run test-cov"
   },
-  "dependencies": {},
+  "dependencies": {
+    "mz-modules": "^2.1.0",
+    "urllib": "^2.38.0"
+  },
   "devDependencies": {
     "egg-bin": "^4.15.0",
     "egg-ci": "1",
     "eslint": "7",
     "eslint-config-egg": "9",
-    "git-contributor": "^1.0.10"
+    "git-contributor": "^1.0.10",
+    "nock": "^13.2.4"
+  },
+  "engines": {
+    "node": ">=14.0.0"
   },
   "homepage": "https://github.com/cnpm/binary-mirror-config",
   "repository": {
