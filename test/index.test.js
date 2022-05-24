@@ -6,7 +6,6 @@ const { MirrorConfig, mirrors } = require('..');
 
 describe('test/index.test.js', () => {
   it('should mirrors exists', () => {
-    console.log(mirrors);
     assert.deepEqual(Object.keys(mirrors), [ 'china' ]);
     assert.equal(mirrors.china.sqlite3.host, 'https://cdn.npmmirror.com/binaries/sqlite3');
     assert.equal(mirrors.china.fsevents.host, 'https://cdn.npmmirror.com/binaries/fsevents');
