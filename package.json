@@ -1,6 +1,6 @@
 {
   "name": "binary-mirror-config",
-  "version": "1.40.1",
+  "version": "2.0.0",
   "description": "Binary mirror config for prebuild and node-pre-gyp",
   "main": "index.js",
   "files": [
@@ -13,13 +13,19 @@
     "lint": "eslint test index.js",
     "ci": "npm run lint && npm run test-cov"
   },
-  "dependencies": {},
+  "dependencies": {
+    "urllib": "^2.38.0"
+  },
   "devDependencies": {
-    "egg-bin": "^4.15.0",
-    "egg-ci": "1",
-    "eslint": "7",
-    "eslint-config-egg": "9",
-    "git-contributor": "^1.0.10"
+    "egg-bin": "5",
+    "egg-ci": "2",
+    "eslint": "8",
+    "eslint-config-egg": "12",
+    "git-contributor": "1",
+    "nock": "^13.2.4"
+  },
+  "engines": {
+    "node": ">=14.0.0"
   },
   "homepage": "https://github.com/cnpm/binary-mirror-config",
   "repository": {
@@ -37,11 +43,8 @@
   "author": "fengmk2 <fengmk2@gmail.com> (https://github.com/fengmk2)",
   "license": "MIT",
   "ci": {
-    "type": "github",
-    "version": "10, 12, 14, 16",
-    "os": {
-      "github": "linux"
-    }
+    "version": "14, 16, 18",
+    "os": "linux"
   },
   "mirrors": {
     "china": {
@@ -61,6 +64,7 @@
         "SAUCECTL_INSTALL_BINARY_MIRROR": "https://cdn.npmmirror.com/binaries/saucectl",
         "RE2_DOWNLOAD_MIRROR": "https://cdn.npmmirror.com/binaries/node-re2",
         "RE2_DOWNLOAD_SKIP_PATH": "true",
+        "npm_config_keytar_binary_host": "https://cdn.npmmirror.com/binaries/keytar",
         "npm_config_sharp_binary_host": "https://cdn.npmmirror.com/binaries/sharp",
         "npm_config_sharp_libvips_binary_host": "https://cdn.npmmirror.com/binaries/sharp-libvips",
         "npm_config_robotjs_binary_host": "https://cdn.npmmirror.com/binaries/robotjs"

@@ -18,20 +18,21 @@ Binary mirror config for [prebuild](https://github.com/mafintosh/prebuild) and [
 
 ## Mirrors
 
-- China: https://npmmirror.com/mirrors/
-  - CDN prefix: https://cdn.npmmirror.com/binaries/
+- China: <https://npmmirror.com/mirrors/>
+  - CDN prefix: <https://cdn.npmmirror.com/binaries/>
 
 ## License
 
 [MIT](LICENSE)
+
 <!-- GITCONTRIBUTOR_START -->
 
 ## Contributors
 
-|[<img src="https://avatars.githubusercontent.com/u/156269?v=4" width="100px;"/><br/><sub><b>fengmk2</b></sub>](https://github.com/fengmk2)<br/>|[<img src="https://avatars.githubusercontent.com/u/6897780?v=4" width="100px;"/><br/><sub><b>killagu</b></sub>](https://github.com/killagu)<br/>|[<img src="https://avatars.githubusercontent.com/u/36290410?v=4" width="100px;"/><br/><sub><b>WEN-JY</b></sub>](https://github.com/WEN-JY)<br/>|[<img src="https://avatars.githubusercontent.com/u/4136679?v=4" width="100px;"/><br/><sub><b>yibn2008</b></sub>](https://github.com/yibn2008)<br/>|[<img src="https://avatars.githubusercontent.com/u/985607?v=4" width="100px;"/><br/><sub><b>dead-horse</b></sub>](https://github.com/dead-horse)<br/>|[<img src="https://avatars.githubusercontent.com/u/1119126?v=4" width="100px;"/><br/><sub><b>looksgood</b></sub>](https://github.com/looksgood)<br/>|
+|[<img src="https://avatars.githubusercontent.com/u/156269?v=4" width="100px;"/><br/><sub><b>fengmk2</b></sub>](https://github.com/fengmk2)<br/>|[<img src="https://avatars.githubusercontent.com/u/6897780?v=4" width="100px;"/><br/><sub><b>killagu</b></sub>](https://github.com/killagu)<br/>|[<img src="https://avatars.githubusercontent.com/u/4635838?v=4" width="100px;"/><br/><sub><b>gemwuu</b></sub>](https://github.com/gemwuu)<br/>|[<img src="https://avatars.githubusercontent.com/u/36290410?v=4" width="100px;"/><br/><sub><b>WEN-JY</b></sub>](https://github.com/WEN-JY)<br/>|[<img src="https://avatars.githubusercontent.com/u/4136679?v=4" width="100px;"/><br/><sub><b>yibn2008</b></sub>](https://github.com/yibn2008)<br/>|[<img src="https://avatars.githubusercontent.com/u/985607?v=4" width="100px;"/><br/><sub><b>dead-horse</b></sub>](https://github.com/dead-horse)<br/>|
 | :---: | :---: | :---: | :---: | :---: | :---: |
-[<img src="https://avatars.githubusercontent.com/u/2784308?v=4" width="100px;"/><br/><sub><b>yisibl</b></sub>](https://github.com/yisibl)<br/>
+[<img src="https://avatars.githubusercontent.com/u/1119126?v=4" width="100px;"/><br/><sub><b>looksgood</b></sub>](https://github.com/looksgood)<br/>|[<img src="https://avatars.githubusercontent.com/u/2784308?v=4" width="100px;"/><br/><sub><b>yisibl</b></sub>](https://github.com/yisibl)<br/>
 
-This project follows the git-contributor [spec](https://github.com/xudafeng/git-contributor), auto updated at `Wed Feb 09 2022 22:28:59 GMT+0800`.
+This project follows the git-contributor [spec](https://github.com/xudafeng/git-contributor), auto updated at `Sat Jun 11 2022 21:25:48 GMT+0800`.
 
 <!-- GITCONTRIBUTOR_END -->

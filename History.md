@@ -1,4 +1,16 @@
 
+2.0.0 / 2022-06-11
+==================
+
+**features**
+  * [[`6e35823`](http://github.com/cnpm/binary-mirror-config/commit/6e3582395c8cdaeb5648945a35ad646037a1d9f7)] - feat: add MirrorConfig class (#31) (Ke Wu <<gemwuu@163.com>>)
+
+1.41.0 / 2022-05-10
+==================
+
+**features**
+  * [[`c81b3c6`](http://github.com/cnpm/binary-mirror-config/commit/c81b3c6607ed1ac3612f53fc95b8805b7254c37a)] - feat: mirror keytar (fengmk2 <<fengmk2@gmail.com>>)
+
 1.40.1 / 2022-04-14
 ==================
 
