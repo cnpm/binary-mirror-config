@@ -1,9 +1,8 @@
-'use strict';
-
-const { setTimeout } = require('timers/promises');
 const fs = require('fs/promises');
 const path = require('path');
 const urllib = require('urllib');
+const sleep = require('mz-modules/sleep');
+
 class MirrorConfig {
   constructor(options = {}) {
     this.pkgName = 'binary-mirror-config';
@@ -31,7 +30,7 @@ class MirrorConfig {
 
     if (pkg.status !== 200) {
       this.retryCount -= 1;
-      await setTimeout(this.retryTimeout);
+      await sleep(this.retryTimeout);
       await this.init();
       return;
     }

@@ -1,5 +1,4 @@
-binary-mirror-config
-=======
+# binary-mirror-config
 
 [![NPM version][npm-image]][npm-url]
 [![Node.js CI](https://github.com/cnpm/binary-mirror-config/actions/workflows/nodejs.yml/badge.svg)](https://github.com/cnpm/binary-mirror-config/actions/workflows/nodejs.yml)

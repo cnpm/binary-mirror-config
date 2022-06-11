@@ -1,5 +1,3 @@
-'use strict';
-
 const assert = require('assert');
 const nock = require('nock');
 const fs = require('fs/promises');
