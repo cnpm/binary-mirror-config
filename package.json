@@ -145,6 +145,9 @@
       "canvas": {
         "host": "https://cdn.npmmirror.com/binaries/canvas"
       },
+      "skia-canvas": {
+        "host": "https://cdn.npmmirror.com/binaries/skia-canvas"
+      },
       "flow-bin": {
         "replaceHost": "https://github.com/facebook/flow/releases/download/v",
         "host": "https://cdn.npmmirror.com/binaries/flow/v"
