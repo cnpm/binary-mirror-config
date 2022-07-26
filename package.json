@@ -18,6 +18,7 @@
     "chalk": "^2.4.2",
     "debug": "^4.3.4",
     "mz-modules": "^2.1.0",
+    "semver": "^7.3.7",
     "urllib": "^2.38.0"
   },
   "devDependencies": {
