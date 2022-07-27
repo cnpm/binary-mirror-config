@@ -80,7 +80,7 @@ describe('test/index.test.js', () => {
           package_name: '{module_name}-v{version}-{node_abi}-{platform}-{libc}-{arch}.tar.gz',
         },
       };
-      mirrorConfig.setMirrorUrl(pkg);
+      mirrorConfig.setMirrorUrl(pkg, path.join(fixtures, 'canvas'));
 
       assert.deepStrictEqual(pkg, {
         name: 'canvas',
@@ -117,7 +117,6 @@ describe('test/index.test.js', () => {
     it('should work', async () => {
       const mirrorConfig = new MirrorConfig({
         console: globalThis.console,
-        ungzipDir: path.join(fixtures, 'canvas'),
       });
       await mirrorConfig.init();
       const options = {
@@ -161,8 +160,8 @@ describe('test/index.test.js', () => {
         },
       });
 
-      await mirrorConfig.updatePkg(root, pkg);
-      const latestPkg = await fs.readFile(path.join(root, 'package.json'), 'utf8');
+      await mirrorConfig.updatePkg(path.join(fixtures, 'canvas'), pkg);
+      const latestPkg = await fs.readFile(path.join(fixtures, 'canvas/package.json'), 'utf8');
       assert.deepStrictEqual(JSON.parse(latestPkg), {
         name: 'canvas',
         scripts: {
@@ -228,8 +227,8 @@ describe('test/index.test.js', () => {
         },
       });
 
-      await mirrorConfig.updatePkg(root, pkg);
-      const latestPkg = await fs.readFile(path.join(root, 'package.json'), 'utf8');
+      await mirrorConfig.updatePkg(path.join(fixtures, 'sqlite3'), pkg);
+      const latestPkg = await fs.readFile(path.join(fixtures, 'sqlite3/package.json'), 'utf8');
       assert.deepStrictEqual(JSON.parse(latestPkg), {
         name: 'sqlite3',
         scripts: {
@@ -262,7 +261,6 @@ describe('test/index.test.js', () => {
       });
       it('should work with cwebp-bin', async () => {
         const mirrorConfig = new MirrorConfig({
-          ungzipDir: path.join(fixtures, 'cwebp-bin'),
           console: globalThis.console,
         });
         await mirrorConfig.init();
@@ -300,7 +298,7 @@ describe('test/index.test.js', () => {
           npm_config_robotjs_binary_host: 'https://cdn.npmmirror.com/binaries/robotjs',
         });
 
-        await mirrorConfig.updatePkg(root, pkg);
+        await mirrorConfig.updatePkg(path.join(fixtures, 'cwebp-bin'), pkg);
 
         const latestFileIndex = await fs.readFile(path.join(fixtures, 'cwebp-bin/lib/index.js'), 'utf8');
         const latestFileInstall = await fs.readFile(path.join(fixtures, 'cwebp-bin/lib/install.js'), 'utf8');
