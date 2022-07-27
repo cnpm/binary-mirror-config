@@ -10,6 +10,12 @@ const { MirrorConfig, mirrors } = require('..');
 const fixtures = path.join(__dirname, './fixtures');
 
 describe('test/index.test.js', () => {
+  before(async () => {
+    await fs.mkdir(path.join(fixtures, 'canvas'), { recursive: true });
+    await fs.mkdir(path.join(fixtures, 'cwebp-bin'), { recursive: true });
+    await fs.mkdir(path.join(fixtures, 'sqlite3'), { recursive: true });
+  });
+
   it('should mirrors exists', () => {
     assert.deepEqual(Object.keys(mirrors), [ 'china' ]);
     assert.equal(mirrors.china.sqlite3.host, 'https://cdn.npmmirror.com/binaries/sqlite3');
