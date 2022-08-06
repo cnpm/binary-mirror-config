@@ -140,6 +140,10 @@
         "host": "https://cdn.npmmirror.com/binaries",
         "remote_path": "{name}/v{version}"
       },
+      "wrtc": {
+        "host": "https://cdn.npmmirror.com/binaries",
+        "remote_path": "{name}/v{version}"
+      },
       "fsevents": {
         "host": "https://cdn.npmmirror.com/binaries/fsevents"
       },
