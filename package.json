@@ -70,6 +70,7 @@
         "SAUCECTL_INSTALL_BINARY_MIRROR": "https://cdn.npmmirror.com/binaries/saucectl",
         "RE2_DOWNLOAD_MIRROR": "https://cdn.npmmirror.com/binaries/node-re2",
         "RE2_DOWNLOAD_SKIP_PATH": "true",
+        "npm_config_better_sqlite3_binary_host": "https://cdn.npmmirror.com/binaries/better-sqlite3",
         "npm_config_keytar_binary_host": "https://cdn.npmmirror.com/binaries/keytar",
         "npm_config_sharp_binary_host": "https://cdn.npmmirror.com/binaries/sharp",
         "npm_config_sharp_libvips_binary_host": "https://cdn.npmmirror.com/binaries/sharp-libvips",
