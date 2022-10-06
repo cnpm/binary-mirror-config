@@ -1,19 +1,26 @@
-'use strict';
-
 const assert = require('assert');
-// const { sleep } = require('mz-modules');
-const nock = require('nock');
+const { MockAgent, getGlobalDispatcher, setGlobalDispatcher } = require('urllib');
 const fs = require('fs').promises;
 const os = require('os');
 const path = require('path');
 const { MirrorConfig, mirrors } = require('..');
+
 const fixtures = path.join(__dirname, './fixtures');
 
 describe('test/index.test.js', () => {
+  const mockAgent = new MockAgent();
+  const globalAgent = getGlobalDispatcher();
+
   before(async () => {
     await fs.mkdir(path.join(fixtures, 'canvas'), { recursive: true });
     await fs.mkdir(path.join(fixtures, 'cwebp-bin'), { recursive: true });
     await fs.mkdir(path.join(fixtures, 'sqlite3'), { recursive: true });
+    setGlobalDispatcher(mockAgent);
+  });
+
+  after(async () => {
+    setGlobalDispatcher(globalAgent);
+    await mockAgent.close();
   });
 
   it('should mirrors exists', () => {
@@ -25,33 +32,32 @@ describe('test/index.test.js', () => {
   });
 
   describe('failure', () => {
-    let nockScope;
-    beforeEach(() => {
-      nockScope = nock('https://registry.npmmirror.com')
-        .persist()
-        .get('/binary-mirror-config/latest')
-        .reply(500);
-    });
-
-    afterEach(nock.cleanAll);
     it('should fail', async () => {
+      mockAgent.get('https://registry.npmmirror.com')
+        .intercept({
+          path: '/binary-mirror-config/latest',
+          method: 'GET',
+        })
+        .reply(500)
+        .times(2);
+
       const mirrorConfig = new MirrorConfig({
         retryCount: 2,
         retryTimeout: 300,
         console: globalThis.console,
       });
       await mirrorConfig.init();
-      assert(nockScope.isDone());
+      mockAgent.assertNoPendingInterceptors();
     });
   });
 
   describe('success', () => {
-    let nockScope;
-    beforeEach(() => {
-      nockScope = nock('https://registry.npmmirror.com')
-        .persist()
-        .get('/binary-mirror-config/latest')
-        .reply(200, {
+    it('should work', async () => {
+      mockAgent.get('https://registry.npmmirror.com')
+        .intercept({
+          path: '/binary-mirror-config/latest',
+          method: 'GET',
+        }).reply(200, {
           mirrors: {
             china: {
               canvas: {
@@ -63,11 +69,7 @@ describe('test/index.test.js', () => {
             },
           },
         });
-    });
-    afterEach(() => {
-      nock.cleanAll();
-    });
-    it('should work', async () => {
+
       const mirrorConfig = new MirrorConfig({
         console: globalThis.console,
       });
@@ -101,7 +103,7 @@ describe('test/index.test.js', () => {
           host: 'https://cdn.npmmirror.com/binaries/canvas',
         },
       });
-      assert(nockScope.isDone());
+      mockAgent.assertNoPendingInterceptors();
     });
   });
 
@@ -159,6 +161,7 @@ describe('test/index.test.js', () => {
           PLAYWRIGHT_DOWNLOAD_HOST: 'https://cdn.npmmirror.com/binaries/playwright',
           RE2_DOWNLOAD_MIRROR: 'https://cdn.npmmirror.com/binaries/node-re2',
           RE2_DOWNLOAD_SKIP_PATH: 'true',
+          npm_config_better_sqlite3_binary_host: 'https://cdn.npmmirror.com/binaries/better-sqlite3',
           npm_config_keytar_binary_host: 'https://cdn.npmmirror.com/binaries/keytar',
           npm_config_sharp_binary_host: 'https://cdn.npmmirror.com/binaries/sharp',
           npm_config_sharp_libvips_binary_host: 'https://cdn.npmmirror.com/binaries/sharp-libvips',
@@ -226,6 +229,7 @@ describe('test/index.test.js', () => {
           SAUCECTL_INSTALL_BINARY_MIRROR: 'https://cdn.npmmirror.com/binaries/saucectl',
           RE2_DOWNLOAD_MIRROR: 'https://cdn.npmmirror.com/binaries/node-re2',
           RE2_DOWNLOAD_SKIP_PATH: 'true',
+          npm_config_better_sqlite3_binary_host: 'https://cdn.npmmirror.com/binaries/better-sqlite3',
           npm_config_keytar_binary_host: 'https://cdn.npmmirror.com/binaries/keytar',
           npm_config_sharp_binary_host: 'https://cdn.npmmirror.com/binaries/sharp',
           npm_config_sharp_libvips_binary_host: 'https://cdn.npmmirror.com/binaries/sharp-libvips',
@@ -298,6 +302,7 @@ describe('test/index.test.js', () => {
           SAUCECTL_INSTALL_BINARY_MIRROR: 'https://cdn.npmmirror.com/binaries/saucectl',
           RE2_DOWNLOAD_MIRROR: 'https://cdn.npmmirror.com/binaries/node-re2',
           RE2_DOWNLOAD_SKIP_PATH: 'true',
+          npm_config_better_sqlite3_binary_host: 'https://cdn.npmmirror.com/binaries/better-sqlite3',
           npm_config_keytar_binary_host: 'https://cdn.npmmirror.com/binaries/keytar',
           npm_config_sharp_binary_host: 'https://cdn.npmmirror.com/binaries/sharp',
           npm_config_sharp_libvips_binary_host: 'https://cdn.npmmirror.com/binaries/sharp-libvips',

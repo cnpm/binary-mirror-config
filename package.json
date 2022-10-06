@@ -16,18 +16,15 @@
   },
   "dependencies": {
     "chalk": "^2.4.2",
-    "debug": "^4.3.4",
-    "mz-modules": "^2.1.0",
     "semver": "^7.3.7",
-    "urllib": "^2.38.0"
+    "urllib": "^3.3.0"
   },
   "devDependencies": {
     "egg-bin": "5",
     "egg-ci": "2",
     "eslint": "8",
     "eslint-config-egg": "12",
-    "git-contributor": "1",
-    "nock": "^13.2.4"
+    "git-contributor": "1"
   },
   "engines": {
     "node": ">=14.0.0"
