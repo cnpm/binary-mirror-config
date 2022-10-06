@@ -138,6 +138,9 @@
         "host": "https://cdn.npmmirror.com/binaries",
         "remote_path": "{name}/v{version}"
       },
+      "grpc-tools": {
+        "host": "https://cdn.npmmirror.com/binaries"
+      },
       "wrtc": {
         "host": "https://cdn.npmmirror.com/binaries",
         "remote_path": "{name}/v{version}"
