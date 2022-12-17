@@ -21,7 +21,6 @@
   },
   "devDependencies": {
     "egg-bin": "5",
-    "egg-ci": "2",
     "eslint": "8",
     "eslint-config-egg": "12",
     "git-contributor": "1"
@@ -44,10 +43,6 @@
   ],
   "author": "fengmk2 <fengmk2@gmail.com> (https://github.com/fengmk2)",
   "license": "MIT",
-  "ci": {
-    "version": "14, 16, 18",
-    "os": "linux"
-  },
   "mirrors": {
     "china": {
       "ENVS": {
