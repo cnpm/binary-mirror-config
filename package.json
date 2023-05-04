@@ -46,6 +46,7 @@
   "mirrors": {
     "china": {
       "ENVS": {
+        "COREPACK_NPM_REGISTRY": "https://registry.npmmirror.com",
         "NODEJS_ORG_MIRROR": "https://cdn.npmmirror.com/binaries/node",
         "NVM_NODEJS_ORG_MIRROR": "https://cdn.npmmirror.com/binaries/node",
         "PHANTOMJS_CDNURL": "https://cdn.npmmirror.com/binaries/phantomjs",
