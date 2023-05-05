@@ -58,7 +58,7 @@
         "SASS_BINARY_SITE": "https://cdn.npmmirror.com/binaries/node-sass",
         "SWC_BINARY_SITE": "https://cdn.npmmirror.com/binaries/node-swc",
         "NWJS_URLBASE": "https://cdn.npmmirror.com/binaries/nwjs/v",
-        "PUPPETEER_DOWNLOAD_HOST": "https://cdn.npmmirror.com/binaries",
+        "PUPPETEER_DOWNLOAD_HOST": "https://cdn.npmmirror.com/binaries/chrome-for-testing",
         "PUPPETEER_DOWNLOAD_BASE_URL": "https://cdn.npmmirror.com/binaries/chrome-for-testing",
         "PLAYWRIGHT_DOWNLOAD_HOST": "https://cdn.npmmirror.com/binaries/playwright",
         "SENTRYCLI_CDNURL": "https://cdn.npmmirror.com/binaries/sentry-cli",

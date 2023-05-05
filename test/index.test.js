@@ -3,6 +3,7 @@ const { MockAgent, getGlobalDispatcher, setGlobalDispatcher } = require('urllib'
 const fs = require('fs').promises;
 const os = require('os');
 const path = require('path');
+const pkgJSON = require('../package.json');
 const { MirrorConfig, mirrors } = require('..');
 
 const fixtures = path.join(__dirname, './fixtures');
@@ -114,6 +115,13 @@ describe('test/index.test.js', () => {
       fs.mkdir(root, {
         recursive: true,
       });
+      mockAgent
+        .get('https://registry.npmmirror.com')
+        .intercept({
+          path: '/binary-mirror-config/latest',
+          method: 'GET',
+        })
+        .reply(200, pkgJSON);
     });
 
     afterEach(async () => {
@@ -146,6 +154,7 @@ describe('test/index.test.js', () => {
       assert.deepStrictEqual(options, {
         env: {
           NODEJS_ORG_MIRROR: 'https://cdn.npmmirror.com/binaries/node',
+          COREPACK_NPM_REGISTRY: 'https://registry.npmmirror.com',
           NVM_NODEJS_ORG_MIRROR: 'https://cdn.npmmirror.com/binaries/node',
           PHANTOMJS_CDNURL: 'https://cdn.npmmirror.com/binaries/phantomjs',
           CHROMEDRIVER_CDNURL: 'https://cdn.npmmirror.com/binaries/chromedriver',
@@ -156,7 +165,8 @@ describe('test/index.test.js', () => {
           SASS_BINARY_SITE: 'https://cdn.npmmirror.com/binaries/node-sass',
           SWC_BINARY_SITE: 'https://cdn.npmmirror.com/binaries/node-swc',
           NWJS_URLBASE: 'https://cdn.npmmirror.com/binaries/nwjs/v',
-          PUPPETEER_DOWNLOAD_HOST: 'https://cdn.npmmirror.com/binaries',
+          PUPPETEER_DOWNLOAD_HOST: 'https://cdn.npmmirror.com/binaries/chrome-for-testing',
+          PUPPETEER_DOWNLOAD_BASE_URL: 'https://cdn.npmmirror.com/binaries/chrome-for-testing',
           SENTRYCLI_CDNURL: 'https://cdn.npmmirror.com/binaries/sentry-cli',
           SAUCECTL_INSTALL_BINARY_MIRROR: 'https://cdn.npmmirror.com/binaries/saucectl',
           PLAYWRIGHT_DOWNLOAD_HOST: 'https://cdn.npmmirror.com/binaries/playwright',
@@ -216,6 +226,7 @@ describe('test/index.test.js', () => {
         env: {
           NODEJS_ORG_MIRROR: 'https://cdn.npmmirror.com/binaries/node',
           NVM_NODEJS_ORG_MIRROR: 'https://cdn.npmmirror.com/binaries/node',
+          COREPACK_NPM_REGISTRY: 'https://registry.npmmirror.com',
           PHANTOMJS_CDNURL: 'https://cdn.npmmirror.com/binaries/phantomjs',
           CHROMEDRIVER_CDNURL: 'https://cdn.npmmirror.com/binaries/chromedriver',
           CYPRESS_DOWNLOAD_PATH_TEMPLATE: 'https://cdn.npmmirror.com/binaries/cypress/${version}/${platform}-${arch}/cypress.zip',
@@ -226,7 +237,8 @@ describe('test/index.test.js', () => {
           PLAYWRIGHT_DOWNLOAD_HOST: 'https://cdn.npmmirror.com/binaries/playwright',
           SWC_BINARY_SITE: 'https://cdn.npmmirror.com/binaries/node-swc',
           NWJS_URLBASE: 'https://cdn.npmmirror.com/binaries/nwjs/v',
-          PUPPETEER_DOWNLOAD_HOST: 'https://cdn.npmmirror.com/binaries',
+          PUPPETEER_DOWNLOAD_HOST: 'https://cdn.npmmirror.com/binaries/chrome-for-testing',
+          PUPPETEER_DOWNLOAD_BASE_URL: 'https://cdn.npmmirror.com/binaries/chrome-for-testing',
           SENTRYCLI_CDNURL: 'https://cdn.npmmirror.com/binaries/sentry-cli',
           SAUCECTL_INSTALL_BINARY_MIRROR: 'https://cdn.npmmirror.com/binaries/saucectl',
           RE2_DOWNLOAD_MIRROR: 'https://cdn.npmmirror.com/binaries/node-re2',
@@ -289,6 +301,7 @@ describe('test/index.test.js', () => {
         mirrorConfig.setEnvs(options);
         assert.deepStrictEqual(options.env, {
           NODEJS_ORG_MIRROR: 'https://cdn.npmmirror.com/binaries/node',
+          COREPACK_NPM_REGISTRY: 'https://registry.npmmirror.com',
           NVM_NODEJS_ORG_MIRROR: 'https://cdn.npmmirror.com/binaries/node',
           PHANTOMJS_CDNURL: 'https://cdn.npmmirror.com/binaries/phantomjs',
           CHROMEDRIVER_CDNURL: 'https://cdn.npmmirror.com/binaries/chromedriver',
@@ -300,7 +313,7 @@ describe('test/index.test.js', () => {
           PLAYWRIGHT_DOWNLOAD_HOST: 'https://cdn.npmmirror.com/binaries/playwright',
           SWC_BINARY_SITE: 'https://cdn.npmmirror.com/binaries/node-swc',
           NWJS_URLBASE: 'https://cdn.npmmirror.com/binaries/nwjs/v',
-          PUPPETEER_DOWNLOAD_HOST: 'https://cdn.npmmirror.com/binaries',
+          PUPPETEER_DOWNLOAD_HOST: 'https://cdn.npmmirror.com/binaries/chrome-for-testing',
           PUPPETEER_DOWNLOAD_BASE_URL: 'https://cdn.npmmirror.com/binaries/chrome-for-testing',
           SENTRYCLI_CDNURL: 'https://cdn.npmmirror.com/binaries/sentry-cli',
           SAUCECTL_INSTALL_BINARY_MIRROR: 'https://cdn.npmmirror.com/binaries/saucectl',
