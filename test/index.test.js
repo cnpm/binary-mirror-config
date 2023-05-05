@@ -301,6 +301,7 @@ describe('test/index.test.js', () => {
           SWC_BINARY_SITE: 'https://cdn.npmmirror.com/binaries/node-swc',
           NWJS_URLBASE: 'https://cdn.npmmirror.com/binaries/nwjs/v',
           PUPPETEER_DOWNLOAD_HOST: 'https://cdn.npmmirror.com/binaries',
+          PUPPETEER_DOWNLOAD_BASE_URL: 'https://cdn.npmmirror.com/binaries/chrome-for-testing',
           SENTRYCLI_CDNURL: 'https://cdn.npmmirror.com/binaries/sentry-cli',
           SAUCECTL_INSTALL_BINARY_MIRROR: 'https://cdn.npmmirror.com/binaries/saucectl',
           RE2_DOWNLOAD_MIRROR: 'https://cdn.npmmirror.com/binaries/node-re2',
