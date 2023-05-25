@@ -65,6 +65,7 @@
         "SAUCECTL_INSTALL_BINARY_MIRROR": "https://cdn.npmmirror.com/binaries/saucectl",
         "RE2_DOWNLOAD_MIRROR": "https://cdn.npmmirror.com/binaries/node-re2",
         "RE2_DOWNLOAD_SKIP_PATH": "true",
+        "PRISMA_ENGINES_MIRROR": "https://registry.npmmirror.com/-/binary/prisma",
         "npm_config_better_sqlite3_binary_host": "https://cdn.npmmirror.com/binaries/better-sqlite3",
         "npm_config_keytar_binary_host": "https://cdn.npmmirror.com/binaries/keytar",
         "npm_config_sharp_binary_host": "https://cdn.npmmirror.com/binaries/sharp",
