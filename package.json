@@ -20,10 +20,10 @@
     "urllib": "^3.3.0"
   },
   "devDependencies": {
-    "egg-bin": "5",
+    "egg-bin": "6",
     "eslint": "8",
     "eslint-config-egg": "12",
-    "git-contributor": "1"
+    "git-contributor": "2"
   },
   "engines": {
     "node": ">=14.0.0"
@@ -259,6 +259,9 @@
       },
       "gdal-async": {
         "host": "https://cdn.npmmirror.com/binaries/node-gdal-async"
+      },
+      "libpg-query": {
+        "host": "https://cdn.npmmirror.com/binaries"
       }
     }
   }
