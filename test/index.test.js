@@ -154,6 +154,7 @@ describe('test/index.test.js', () => {
       assert.deepStrictEqual(options, {
         env: {
           NODEJS_ORG_MIRROR: 'https://cdn.npmmirror.com/binaries/node',
+          EDGEDRIVER_CDNURL: 'https://npmmirror.com/mirrors/edgedriver',
           COREPACK_NPM_REGISTRY: 'https://registry.npmmirror.com',
           NVM_NODEJS_ORG_MIRROR: 'https://cdn.npmmirror.com/binaries/node',
           PHANTOMJS_CDNURL: 'https://cdn.npmmirror.com/binaries/phantomjs',
@@ -227,6 +228,7 @@ describe('test/index.test.js', () => {
         env: {
           NODEJS_ORG_MIRROR: 'https://cdn.npmmirror.com/binaries/node',
           NVM_NODEJS_ORG_MIRROR: 'https://cdn.npmmirror.com/binaries/node',
+          EDGEDRIVER_CDNURL: 'https://npmmirror.com/mirrors/edgedriver',
           COREPACK_NPM_REGISTRY: 'https://registry.npmmirror.com',
           PHANTOMJS_CDNURL: 'https://cdn.npmmirror.com/binaries/phantomjs',
           CHROMEDRIVER_CDNURL: 'https://cdn.npmmirror.com/binaries/chromedriver',
@@ -304,6 +306,7 @@ describe('test/index.test.js', () => {
         assert.deepStrictEqual(options.env, {
           NODEJS_ORG_MIRROR: 'https://cdn.npmmirror.com/binaries/node',
           COREPACK_NPM_REGISTRY: 'https://registry.npmmirror.com',
+          EDGEDRIVER_CDNURL: 'https://npmmirror.com/mirrors/edgedriver',
           NVM_NODEJS_ORG_MIRROR: 'https://cdn.npmmirror.com/binaries/node',
           PHANTOMJS_CDNURL: 'https://cdn.npmmirror.com/binaries/phantomjs',
           CHROMEDRIVER_CDNURL: 'https://cdn.npmmirror.com/binaries/chromedriver',
