@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.14.0](https://github.com/cnpm/binary-mirror-config/compare/v2.13.0...v2.14.0) (2024-05-11)
+
+
+### Features
+
+* add EDGEDRIVER_CDNURL env ([#50](https://github.com/cnpm/binary-mirror-config/issues/50)) ([b14b16a](https://github.com/cnpm/binary-mirror-config/commit/b14b16ae7c9d78719977579fad5270c2dd650982))
+
 ## [2.13.0](https://github.com/cnpm/binary-mirror-config/compare/v2.12.0...v2.13.0) (2023-07-31)
 
 
