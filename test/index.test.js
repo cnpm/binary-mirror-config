@@ -191,6 +191,7 @@ describe('test/index.test.js', () => {
         },
         binary: {
           host: 'https://cdn.npmmirror.com/binaries/canvas',
+          remote_path: 'v{version}',
         },
       });
     });

@@ -152,7 +152,8 @@
         "host": "https://cdn.npmmirror.com/binaries/nodejieba"
       },
       "canvas": {
-        "host": "https://cdn.npmmirror.com/binaries/canvas"
+        "host": "https://cdn.npmmirror.com/binaries/canvas",
+        "remote_path": "v{version}"
       },
       "skia-canvas": {
         "host": "https://cdn.npmmirror.com/binaries/skia-canvas"

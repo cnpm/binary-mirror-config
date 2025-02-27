@@ -4,6 +4,7 @@
     "install": "node-pre-gyp install --fallback-to-build --update-binary"
   },
   "binary": {
-    "host": "https://cdn.npmmirror.com/binaries/canvas"
+    "host": "https://cdn.npmmirror.com/binaries/canvas",
+    "remote_path": "v{version}"
   }
 }
