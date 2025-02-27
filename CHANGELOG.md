@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.15.0](https://github.com/cnpm/binary-mirror-config/compare/v2.14.0...v2.15.0) (2025-02-27)
+
+
+### Features
+
+* canvas 3 ([#52](https://github.com/cnpm/binary-mirror-config/issues/52)) ([0a3eb53](https://github.com/cnpm/binary-mirror-config/commit/0a3eb531f1c84c7625a72f9f54b63b9c6ab15b25)), closes [3.1.0#L66-L67](https://github.com/cnpm/3.1.0/issues/L66-L67) [2.11.2#L41-L42](https://github.com/cnpm/2.11.2/issues/L41-L42)
+
 ## [2.14.0](https://github.com/cnpm/binary-mirror-config/compare/v2.13.0...v2.14.0) (2024-05-11)
 
 
