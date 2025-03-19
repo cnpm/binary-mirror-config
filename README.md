@@ -20,6 +20,10 @@ Binary mirror config for [prebuild](https://github.com/mafintosh/prebuild) and [
 - China: <https://npmmirror.com/mirrors/>
   - CDN prefix: <https://cdn.npmmirror.com/binaries/>
 
+### `.env` file
+
+We've generated an [.env](.env) file with all the environment variables, which you can use directly.
+
 ## License
 
 [MIT](LICENSE)

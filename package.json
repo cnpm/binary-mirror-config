@@ -5,13 +5,17 @@
   "main": "index.js",
   "files": [
     "index.js",
-    "lib"
+    "lib",
+    ".env"
   ],
   "scripts": {
-    "contributor": "git-contributor",
+    "gen": "node gen_env.js",
+    "prepublishOnly": "npm run gen",
+    "pretest": "npm run gen",
     "test": "npm run lint && egg-bin test",
     "test-cov": "egg-bin cov",
     "lint": "eslint test index.js",
+    "prelint": "npm run gen",
     "ci": "npm run lint && npm run test-cov"
   },
   "dependencies": {
@@ -22,8 +26,7 @@
   "devDependencies": {
     "egg-bin": "6",
     "eslint": "8",
-    "eslint-config-egg": "12",
-    "git-contributor": "2"
+    "eslint-config-egg": "12"
   },
   "engines": {
     "node": ">=14.0.0"
@@ -71,7 +74,8 @@
         "npm_config_keytar_binary_host": "https://cdn.npmmirror.com/binaries/keytar",
         "npm_config_sharp_binary_host": "https://cdn.npmmirror.com/binaries/sharp",
         "npm_config_sharp_libvips_binary_host": "https://cdn.npmmirror.com/binaries/sharp-libvips",
-        "npm_config_robotjs_binary_host": "https://cdn.npmmirror.com/binaries/robotjs"
+        "npm_config_robotjs_binary_host": "https://cdn.npmmirror.com/binaries/robotjs",
+        "npm_config_registry": "https://registry.npmmirror.com"
       },
       "@ali/s2": {
         "host": "https://cdn.npmmirror.com/binaries/looksgood-s2"
