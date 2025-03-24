@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.16.0](https://github.com/cnpm/binary-mirror-config/compare/v2.15.0...v2.16.0) (2025-03-24)
+
+
+### Features
+
+* add env for gl@8 ([#55](https://github.com/cnpm/binary-mirror-config/issues/55)) ([c9b3e7c](https://github.com/cnpm/binary-mirror-config/commit/c9b3e7ce0389e24c1c4b2f11fb0c4863ea713bda))
+
 ## [2.15.0](https://github.com/cnpm/binary-mirror-config/compare/v2.14.0...v2.15.0) (2025-02-27)
 
 
