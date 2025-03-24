@@ -71,7 +71,8 @@
         "npm_config_keytar_binary_host": "https://cdn.npmmirror.com/binaries/keytar",
         "npm_config_sharp_binary_host": "https://cdn.npmmirror.com/binaries/sharp",
         "npm_config_sharp_libvips_binary_host": "https://cdn.npmmirror.com/binaries/sharp-libvips",
-        "npm_config_robotjs_binary_host": "https://cdn.npmmirror.com/binaries/robotjs"
+        "npm_config_robotjs_binary_host": "https://cdn.npmmirror.com/binaries/robotjs",
+        "npm_config_gl_binary_host": "https://cdn.npmmirror.com/binaries/gl"
       },
       "@ali/s2": {
         "host": "https://cdn.npmmirror.com/binaries/looksgood-s2"
