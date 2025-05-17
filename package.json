@@ -1,6 +1,6 @@
 {
   "name": "binary-mirror-config",
-  "version": "2.16.0",
+  "version": "2.17.0",
   "description": "Binary mirror config for prebuild and node-pre-gyp",
   "main": "index.js",
   "files": [

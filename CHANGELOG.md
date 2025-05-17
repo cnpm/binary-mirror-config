@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.17.0](https://github.com/cnpm/binary-mirror-config/compare/v2.16.0...v2.17.0) (2025-05-17)
+
+
+### Features
+
+* env for puppeteer@24 ([#56](https://github.com/cnpm/binary-mirror-config/issues/56)) ([43061d5](https://github.com/cnpm/binary-mirror-config/commit/43061d5b8a44abcf871ca32d26a3f42c2e968739)), closes [/github.com/puppeteer/puppeteer/blob/f3133e1eef0c74612d11aae9533a8be5743cd6a3/packages/puppeteer-core/src/common/Configuration.ts#L97](https://github.com/cnpm//github.com/puppeteer/puppeteer/blob/f3133e1eef0c74612d11aae9533a8be5743cd6a3/packages/puppeteer-core/src/common/Configuration.ts/issues/L97)
+
 ## [2.16.0](https://github.com/cnpm/binary-mirror-config/compare/v2.15.0...v2.16.0) (2025-03-24)
 
 
