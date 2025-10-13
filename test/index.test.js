@@ -16,6 +16,7 @@ describe('test/index.test.js', () => {
     await fs.mkdir(path.join(fixtures, 'canvas'), { recursive: true });
     await fs.mkdir(path.join(fixtures, 'cwebp-bin'), { recursive: true });
     await fs.mkdir(path.join(fixtures, 'sqlite3'), { recursive: true });
+    await fs.mkdir(path.join(fixtures, '@lvce-editor/ripgrep/src'), { recursive: true });
     setGlobalDispatcher(mockAgent);
   });
 
@@ -30,6 +31,9 @@ describe('test/index.test.js', () => {
     assert.equal(mirrors.china.fsevents.host, 'https://cdn.npmmirror.com/binaries/fsevents');
     assert.equal(mirrors.china['flow-bin'].host, 'https://cdn.npmmirror.com/binaries/flow/v');
     assert.equal(mirrors.china.ENVS.CHROMEDRIVER_CDNURL, 'https://cdn.npmmirror.com/binaries/chromedriver');
+    assert.deepEqual(mirrors.china['@lvce-editor/ripgrep'].replaceHostMap, {
+      'https://github.com/microsoft/ripgrep-prebuilt/releases/download/': 'https://cdn.npmmirror.com/binaries/ripgrep-prebuilt/',
+    });
   });
 
   describe('failure', () => {
@@ -348,6 +352,30 @@ describe('test/index.test.js', () => {
         const latestFileInstall = await fs.readFile(path.join(fixtures, 'cwebp-bin/lib/install.js'), 'utf8');
         assert.match(latestFileIndex, /https:\/\/cdn.npmmirror.com\/binaries\/cwebp-bin/);
         assert.match(latestFileInstall, /https:\/\/cdn.npmmirror.com\/binaries\/cwebp-bin/);
+      });
+
+      it('should work with @lvce-editor/ripgrep', async () => {
+        const mirrorConfig = new MirrorConfig({
+          console: globalThis.console,
+        });
+        await mirrorConfig.init();
+
+        const pkg = {
+          name: '@lvce-editor/ripgrep',
+          version: '1.0.0',
+        };
+
+        const downloadRipGrepPath = path.join(fixtures, '@lvce-editor/ripgrep/src/downloadRipGrep.js');
+        const originalContent = await fs.readFile(downloadRipGrepPath, 'utf8');
+
+        await mirrorConfig.updatePkg(path.join(fixtures, '@lvce-editor/ripgrep'), pkg);
+
+        const modifiedContent = await fs.readFile(downloadRipGrepPath, 'utf8');
+        assert.match(modifiedContent, /https:\/\/cdn\.npmmirror\.com\/binaries\/ripgrep-prebuilt\//);
+        assert.doesNotMatch(modifiedContent, /https:\/\/github\.com\/microsoft\/ripgrep-prebuilt\/releases\/download\//);
+
+        // Restore original file
+        await fs.writeFile(downloadRipGrepPath, originalContent, 'utf8');
       });
     });
   });

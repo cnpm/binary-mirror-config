@@ -267,6 +267,14 @@
       },
       "libpg-query": {
         "host": "https://cdn.npmmirror.com/binaries"
+      },
+      "@lvce-editor/ripgrep": {
+        "replaceHostFiles": [
+          "src/downloadRipGrep.js"
+        ],
+        "replaceHostMap": {
+          "https://github.com/microsoft/ripgrep-prebuilt/releases/download/": "https://cdn.npmmirror.com/binaries/ripgrep-prebuilt/"
+        }
       }
     }
   }
