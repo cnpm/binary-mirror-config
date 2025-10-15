@@ -74,7 +74,8 @@
         "npm_config_sharp_binary_host": "https://cdn.npmmirror.com/binaries/sharp",
         "npm_config_sharp_libvips_binary_host": "https://cdn.npmmirror.com/binaries/sharp-libvips",
         "npm_config_robotjs_binary_host": "https://cdn.npmmirror.com/binaries/robotjs",
-        "npm_config_gl_binary_host": "https://cdn.npmmirror.com/binaries/gl"
+        "npm_config_gl_binary_host": "https://cdn.npmmirror.com/binaries/gl",
+        "RIPGREP_PREBUILT_BINARIES_MIRROR": "https://cdn.npmmirror.com/binaries/ripgrep-prebuilt/releases/download"
       },
       "@ali/s2": {
         "host": "https://cdn.npmmirror.com/binaries/looksgood-s2"
@@ -267,14 +268,6 @@
       },
       "libpg-query": {
         "host": "https://cdn.npmmirror.com/binaries"
-      },
-      "@lvce-editor/ripgrep": {
-        "replaceHostFiles": [
-          "src/downloadRipGrep.js"
-        ],
-        "replaceHostMap": {
-          "https://github.com/microsoft/ripgrep-prebuilt/releases/download/": "https://cdn.npmmirror.com/binaries/ripgrep-prebuilt/"
-        }
       }
     }
   }
