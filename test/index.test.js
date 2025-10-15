@@ -30,7 +30,7 @@ describe('test/index.test.js', () => {
     assert.equal(mirrors.china.fsevents.host, 'https://cdn.npmmirror.com/binaries/fsevents');
     assert.equal(mirrors.china['flow-bin'].host, 'https://cdn.npmmirror.com/binaries/flow/v');
     assert.equal(mirrors.china.ENVS.CHROMEDRIVER_CDNURL, 'https://cdn.npmmirror.com/binaries/chromedriver');
-    assert.equal(mirrors.china.ENVS.RIPGREP_PREBUILT_BINARIES_MIRROR, 'https://cdn.npmmirror.com/binaries/ripgrep-prebuilt/releases/download');
+    assert.equal(mirrors.china.ENVS.RIPGREP_PREBUILT_BINARIES_MIRROR, 'https://cdn.npmmirror.com/binaries/ripgrep-prebuilt');
   });
 
   describe('failure', () => {
@@ -183,7 +183,7 @@ describe('test/index.test.js', () => {
           npm_config_sharp_binary_host: 'https://cdn.npmmirror.com/binaries/sharp',
           npm_config_sharp_libvips_binary_host: 'https://cdn.npmmirror.com/binaries/sharp-libvips',
           npm_config_robotjs_binary_host: 'https://cdn.npmmirror.com/binaries/robotjs',
-          RIPGREP_PREBUILT_BINARIES_MIRROR: 'https://cdn.npmmirror.com/binaries/ripgrep-prebuilt/releases/download',
+          RIPGREP_PREBUILT_BINARIES_MIRROR: 'https://cdn.npmmirror.com/binaries/ripgrep-prebuilt',
         },
       });
 
@@ -261,7 +261,7 @@ describe('test/index.test.js', () => {
           npm_config_sharp_binary_host: 'https://cdn.npmmirror.com/binaries/sharp',
           npm_config_sharp_libvips_binary_host: 'https://cdn.npmmirror.com/binaries/sharp-libvips',
           npm_config_robotjs_binary_host: 'https://cdn.npmmirror.com/binaries/robotjs',
-          RIPGREP_PREBUILT_BINARIES_MIRROR: 'https://cdn.npmmirror.com/binaries/ripgrep-prebuilt/releases/download',
+          RIPGREP_PREBUILT_BINARIES_MIRROR: 'https://cdn.npmmirror.com/binaries/ripgrep-prebuilt',
         },
       });
 
@@ -343,7 +343,7 @@ describe('test/index.test.js', () => {
           npm_config_sharp_binary_host: 'https://cdn.npmmirror.com/binaries/sharp',
           npm_config_sharp_libvips_binary_host: 'https://cdn.npmmirror.com/binaries/sharp-libvips',
           npm_config_robotjs_binary_host: 'https://cdn.npmmirror.com/binaries/robotjs',
-          RIPGREP_PREBUILT_BINARIES_MIRROR: 'https://cdn.npmmirror.com/binaries/ripgrep-prebuilt/releases/download',
+          RIPGREP_PREBUILT_BINARIES_MIRROR: 'https://cdn.npmmirror.com/binaries/ripgrep-prebuilt',
         });
 
         await mirrorConfig.updatePkg(path.join(fixtures, 'cwebp-bin'), pkg);
