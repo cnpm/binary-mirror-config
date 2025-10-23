@@ -3,6 +3,7 @@ const { MockAgent, getGlobalDispatcher, setGlobalDispatcher } = require('urllib'
 const fs = require('fs').promises;
 const os = require('os');
 const path = require('path');
+const { describe, it, before, after, beforeEach, afterEach } = require('node:test');
 
 const pkgJSON = require('../package.json');
 const { MirrorConfig, mirrors } = require('..');

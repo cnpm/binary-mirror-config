@@ -13,4 +13,18 @@ jobs:
     uses: node-modules/github-actions/.github/workflows/node-test.yml@master
     with:
       os: 'ubuntu-latest'
-      version: '14, 16, 18, 20, 22, 24'
+      version: '16, 18, 20, 22, 24'
+
+  lint:
+    name: Lint
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - name: Use Node.js
+        uses: actions/setup-node@v6
+        with:
+          node-version: '22'
+      - name: Install dependencies
+        run: npm install
+      - name: Lint
+        run: npm run lint

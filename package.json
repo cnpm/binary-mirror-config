@@ -8,10 +8,9 @@
     "lib"
   ],
   "scripts": {
-    "test": "npm run lint && egg-bin test",
-    "test-cov": "egg-bin cov",
+    "test": "npm run lint && node --test",
     "lint": "oxlint test index.js",
-    "ci": "npm run lint && npm run test-cov"
+    "ci": "node --test"
   },
   "dependencies": {
     "chalk": "^2.4.2",
@@ -19,7 +18,6 @@
     "urllib": "^3.3.0"
   },
   "devDependencies": {
-    "egg-bin": "6",
     "oxlint": "^1.24.0"
   },
   "engines": {
