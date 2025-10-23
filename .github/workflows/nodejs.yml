@@ -27,4 +27,4 @@ jobs:
       - name: Install dependencies
         run: npm install
       - name: Lint
-        run: npm run lint
+        run: npx oxlint

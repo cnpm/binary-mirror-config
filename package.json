@@ -8,8 +8,7 @@
     "lib"
   ],
   "scripts": {
-    "test": "npm run lint && node --test",
-    "lint": "oxlint test index.js",
+    "test": "oxlint && node --test",
     "ci": "node --test"
   },
   "dependencies": {
