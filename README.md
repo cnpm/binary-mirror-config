@@ -17,21 +17,16 @@ Binary mirror config for [prebuild](https://github.com/mafintosh/prebuild) and [
 
 ## Mirrors
 
-- China: <https://npmmirror.com/mirrors/>
-  - CDN prefix: <https://cdn.npmmirror.com/binaries/>
+- Web Site: <https://npmmirror.com/mirrors/>
+- JSON endpoint: <https://registry.npmmirror.com/-/binary>
+- CDN endpoint prefix: <https://cdn.npmmirror.com/binaries/>
 
 ## License
 
 [MIT](LICENSE)
 
-<!-- GITCONTRIBUTOR_START -->
-
 ## Contributors
 
-|[<img src="https://avatars.githubusercontent.com/u/156269?v=4" width="100px;"/><br/><sub><b>fengmk2</b></sub>](https://github.com/fengmk2)<br/>|[<img src="https://avatars.githubusercontent.com/u/4635838?v=4" width="100px;"/><br/><sub><b>gemwuu</b></sub>](https://github.com/gemwuu)<br/>|[<img src="https://avatars.githubusercontent.com/u/32174276?v=4" width="100px;"/><br/><sub><b>semantic-release-bot</b></sub>](https://github.com/semantic-release-bot)<br/>|[<img src="https://avatars.githubusercontent.com/u/6897780?v=4" width="100px;"/><br/><sub><b>killagu</b></sub>](https://github.com/killagu)<br/>|[<img src="https://avatars.githubusercontent.com/u/1119126?v=4" width="100px;"/><br/><sub><b>looksgood</b></sub>](https://github.com/looksgood)<br/>|[<img src="https://avatars.githubusercontent.com/u/36290410?v=4" width="100px;"/><br/><sub><b>WEN-JY</b></sub>](https://github.com/WEN-JY)<br/>|
-| :---: | :---: | :---: | :---: | :---: | :---: |
-[<img src="https://avatars.githubusercontent.com/u/6996341?v=4" width="100px;"/><br/><sub><b>yuler</b></sub>](https://github.com/yuler)<br/>|[<img src="https://avatars.githubusercontent.com/u/4136679?v=4" width="100px;"/><br/><sub><b>yibn2008</b></sub>](https://github.com/yibn2008)<br/>|[<img src="https://avatars.githubusercontent.com/u/985607?v=4" width="100px;"/><br/><sub><b>dead-horse</b></sub>](https://github.com/dead-horse)<br/>|[<img src="https://avatars.githubusercontent.com/u/5574625?v=4" width="100px;"/><br/><sub><b>elrrrrrrr</b></sub>](https://github.com/elrrrrrrr)<br/>|[<img src="https://avatars.githubusercontent.com/u/2784308?v=4" width="100px;"/><br/><sub><b>yisibl</b></sub>](https://github.com/yisibl)<br/>
+[![Contributors](https://contrib.rocks/image?repo=cnpm/binary-mirror-config)](https://github.com/cnpm/binary-mirror-config/graphs/contributors)
 
-This project follows the git-contributor [spec](https://github.com/xudafeng/git-contributor), auto updated at `Sat May 11 2024 21:19:34 GMT+0800`.
-
-<!-- GITCONTRIBUTOR_END -->
+Made with [contributors-img](https://contrib.rocks).

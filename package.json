@@ -8,10 +8,9 @@
     "lib"
   ],
   "scripts": {
-    "contributor": "git-contributor",
     "test": "npm run lint && egg-bin test",
     "test-cov": "egg-bin cov",
-    "lint": "eslint test index.js",
+    "lint": "oxlint test index.js",
     "ci": "npm run lint && npm run test-cov"
   },
   "dependencies": {
@@ -21,9 +20,7 @@
   },
   "devDependencies": {
     "egg-bin": "6",
-    "eslint": "8",
-    "eslint-config-egg": "12",
-    "git-contributor": "2"
+    "oxlint": "^1.24.0"
   },
   "engines": {
     "node": ">=14.0.0"
