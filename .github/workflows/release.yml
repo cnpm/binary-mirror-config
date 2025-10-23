@@ -1,8 +1,7 @@
 name: Release
-
 on:
   push:
-    branches: [ master ]
+    branches: [master]
 
 permissions:
   contents: write
@@ -13,7 +12,7 @@ permissions:
 
 jobs:
   release:
-    name: Node.js
-    uses: cnpm/github-actions/.github/workflows/node-release.yml@master
+    name: NPM
+    uses: cnpm/github-actions/.github/workflows/npm-release.yml@master
     secrets:
       GIT_TOKEN: ${{ secrets.GIT_TOKEN }}
