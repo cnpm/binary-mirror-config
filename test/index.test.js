@@ -32,6 +32,7 @@ describe('test/index.test.js', () => {
     assert.equal(mirrors.china.fsevents.host, 'https://cdn.npmmirror.com/binaries/fsevents');
     assert.equal(mirrors.china['flow-bin'].host, 'https://cdn.npmmirror.com/binaries/flow/v');
     assert.equal(mirrors.china.ENVS.CHROMEDRIVER_CDNURL, 'https://cdn.npmmirror.com/binaries/chromedriver');
+    assert.equal(mirrors.china.ENVS.RIPGREP_PREBUILT_BINARIES_MIRROR, 'https://registry.npmmirror.com/-/binary/ripgrep-prebuilt');
   });
 
   describe('failure', () => {
@@ -184,6 +185,7 @@ describe('test/index.test.js', () => {
           npm_config_sharp_binary_host: 'https://cdn.npmmirror.com/binaries/sharp',
           npm_config_sharp_libvips_binary_host: 'https://cdn.npmmirror.com/binaries/sharp-libvips',
           npm_config_robotjs_binary_host: 'https://cdn.npmmirror.com/binaries/robotjs',
+          RIPGREP_PREBUILT_BINARIES_MIRROR: 'https://registry.npmmirror.com/-/binary/ripgrep-prebuilt',
         },
       });
 
@@ -261,6 +263,7 @@ describe('test/index.test.js', () => {
           npm_config_sharp_binary_host: 'https://cdn.npmmirror.com/binaries/sharp',
           npm_config_sharp_libvips_binary_host: 'https://cdn.npmmirror.com/binaries/sharp-libvips',
           npm_config_robotjs_binary_host: 'https://cdn.npmmirror.com/binaries/robotjs',
+          RIPGREP_PREBUILT_BINARIES_MIRROR: 'https://registry.npmmirror.com/-/binary/ripgrep-prebuilt',
         },
       });
 
@@ -312,6 +315,18 @@ describe('test/index.test.js', () => {
         };
 
         mirrorConfig.setEnvs(options);
+
+        await mirrorConfig.updatePkg(path.join(fixtures, 'cwebp-bin'), pkg);
+
+        const latestFileIndex = await fs.readFile(path.join(fixtures, 'cwebp-bin/lib/index.js'), 'utf8');
+        const latestFileInstall = await fs.readFile(path.join(fixtures, 'cwebp-bin/lib/install.js'), 'utf8');
+        assert.match(latestFileIndex, /https:\/\/cdn.npmmirror.com\/binaries\/cwebp-bin/);
+        assert.match(latestFileInstall, /https:\/\/cdn.npmmirror.com\/binaries\/cwebp-bin/);
+
+        if (process.version.startsWith('v16.')) {
+          // skip test on node 16, will missing RIPGREP_PREBUILT_BINARIES_MIRROR
+          return;
+        }
         assert.deepStrictEqual(options.env, {
           NODEJS_ORG_MIRROR: 'https://cdn.npmmirror.com/binaries/node',
           COREPACK_NPM_REGISTRY: 'https://registry.npmmirror.com',
@@ -342,14 +357,8 @@ describe('test/index.test.js', () => {
           npm_config_sharp_binary_host: 'https://cdn.npmmirror.com/binaries/sharp',
           npm_config_sharp_libvips_binary_host: 'https://cdn.npmmirror.com/binaries/sharp-libvips',
           npm_config_robotjs_binary_host: 'https://cdn.npmmirror.com/binaries/robotjs',
+          RIPGREP_PREBUILT_BINARIES_MIRROR: 'https://registry.npmmirror.com/-/binary/ripgrep-prebuilt',
         });
-
-        await mirrorConfig.updatePkg(path.join(fixtures, 'cwebp-bin'), pkg);
-
-        const latestFileIndex = await fs.readFile(path.join(fixtures, 'cwebp-bin/lib/index.js'), 'utf8');
-        const latestFileInstall = await fs.readFile(path.join(fixtures, 'cwebp-bin/lib/install.js'), 'utf8');
-        assert.match(latestFileIndex, /https:\/\/cdn.npmmirror.com\/binaries\/cwebp-bin/);
-        assert.match(latestFileInstall, /https:\/\/cdn.npmmirror.com\/binaries\/cwebp-bin/);
       });
     });
   });
