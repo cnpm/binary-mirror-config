@@ -1,5 +1,11 @@
 # Changelog
 
+## 2.18.0 (2025-10-23)
+
+* chore: fix auto release workflow config (#59) ([745a3a3](https://github.com/cnpm/binary-mirror-config/commit/745a3a3)), closes [#59](https://github.com/cnpm/binary-mirror-config/issues/59)
+* chore: use npm-release.yml ([0a631e8](https://github.com/cnpm/binary-mirror-config/commit/0a631e8))
+* feat: add binary mirror support for @lvce-editor/ripgrep package (#58) ([918ab03](https://github.com/cnpm/binary-mirror-config/commit/918ab03)), closes [#58](https://github.com/cnpm/binary-mirror-config/issues/58) [cnpm/binary-mirror-config#57](https://github.com/cnpm/binary-mirror-config/issues/57) [cnpm/binary-mirror-config#57](https://github.com/cnpm/binary-mirror-config/issues/57)
+
 ## [2.17.0](https://github.com/cnpm/binary-mirror-config/compare/v2.16.0...v2.17.0) (2025-05-17)
 
 
