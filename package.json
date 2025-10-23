@@ -12,7 +12,7 @@
     "ci": "node --test"
   },
   "dependencies": {
-    "chalk": "^2.4.2",
+    "chalk": "^5.0.0",
     "semver": "^7.3.7",
     "urllib": "^3.3.0"
   },
