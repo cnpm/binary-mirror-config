@@ -1,5 +1,12 @@
 # Changelog
 
+## 2.19.0 (2026-01-27)
+
+* feat: playwright >= 1.58.0 (#67) ([1af2ea5](https://github.com/cnpm/binary-mirror-config/commit/1af2ea5)), closes [#67](https://github.com/cnpm/binary-mirror-config/issues/67) [hi#level](https://github.com/hi/issues/level)
+* chore: Configure Renovate (#60) ([ae84b8a](https://github.com/cnpm/binary-mirror-config/commit/ae84b8a)), closes [#60](https://github.com/cnpm/binary-mirror-config/issues/60)
+* chore(deps): update actions/checkout action to v6 (#65) ([e75dffa](https://github.com/cnpm/binary-mirror-config/commit/e75dffa)), closes [#65](https://github.com/cnpm/binary-mirror-config/issues/65)
+* chore(deps): update dependency node to v24 (#64) ([38628dc](https://github.com/cnpm/binary-mirror-config/commit/38628dc)), closes [#64](https://github.com/cnpm/binary-mirror-config/issues/64)
+
 ## 2.18.0 (2025-10-23)
 
 * chore: fix auto release workflow config (#59) ([745a3a3](https://github.com/cnpm/binary-mirror-config/commit/745a3a3)), closes [#59](https://github.com/cnpm/binary-mirror-config/issues/59)
