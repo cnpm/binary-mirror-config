@@ -65,11 +65,11 @@
         "RE2_DOWNLOAD_SKIP_PATH": "true",
         "PRISMA_ENGINES_MIRROR": "https://cdn.npmmirror.com/binaries/prisma",
         "npm_config_better_sqlite3_binary_host": "https://cdn.npmmirror.com/binaries/better-sqlite3",
+        "npm_config_isolated_vm_binary_host": "https://cdn.npmmirror.com/binaries/isolated-vm",
         "npm_config_keytar_binary_host": "https://cdn.npmmirror.com/binaries/keytar",
         "npm_config_sharp_binary_host": "https://cdn.npmmirror.com/binaries/sharp",
         "npm_config_sharp_libvips_binary_host": "https://cdn.npmmirror.com/binaries/sharp-libvips",
         "npm_config_robotjs_binary_host": "https://cdn.npmmirror.com/binaries/robotjs",
-        "npm_config_isolated_vm_binary_host": "https://cdn.npmmirror.com/binaries/isolated-vm",
         "npm_config_gl_binary_host": "https://cdn.npmmirror.com/binaries/gl",
         "RIPGREP_PREBUILT_BINARIES_MIRROR": "https://registry.npmmirror.com/-/binary/ripgrep-prebuilt"
       },
