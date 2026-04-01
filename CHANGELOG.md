@@ -1,5 +1,9 @@
 # Changelog
 
+## 2.20.0 (2026-04-01)
+
+* feat: add isolated-vm binary mirror config (#69) ([ea7dbde](https://github.com/cnpm/binary-mirror-config/commit/ea7dbde)), closes [#69](https://github.com/cnpm/binary-mirror-config/issues/69)
+
 ## 2.19.0 (2026-01-27)
 
 * feat: playwright >= 1.58.0 (#67) ([1af2ea5](https://github.com/cnpm/binary-mirror-config/commit/1af2ea5)), closes [#67](https://github.com/cnpm/binary-mirror-config/issues/67) [hi#level](https://github.com/hi/issues/level)
