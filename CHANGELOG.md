@@ -1,5 +1,10 @@
 # Changelog
 
+## <small>2.20.1 (2026-07-02)</small>
+
+* fix: playwright chromium should use playwright mirror, not chrome-for-testing (#71) ([39a2715](https://github.com/cnpm/binary-mirror-config/commit/39a2715)), closes [#71](https://github.com/cnpm/binary-mirror-config/issues/71) [#67](https://github.com/cnpm/binary-mirror-config/issues/67) [#67](https://github.com/cnpm/binary-mirror-config/issues/67)
+* chore(deps): update actions/checkout action to v7 (#70) ([5afdc1c](https://github.com/cnpm/binary-mirror-config/commit/5afdc1c)), closes [#70](https://github.com/cnpm/binary-mirror-config/issues/70)
+
 ## 2.20.0 (2026-04-01)
 
 * feat: add isolated-vm binary mirror config (#69) ([ea7dbde](https://github.com/cnpm/binary-mirror-config/commit/ea7dbde)), closes [#69](https://github.com/cnpm/binary-mirror-config/issues/69)
