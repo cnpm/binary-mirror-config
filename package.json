@@ -14,7 +14,7 @@
   "dependencies": {
     "chalk": "^2.4.2",
     "semver": "^7.3.7",
-    "urllib": "^3.3.0"
+    "urllib": "^4.0.0"
   },
   "devDependencies": {
     "oxlint": "^1.24.0"
